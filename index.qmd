@@ -271,15 +271,28 @@ Pilatti et al. 2026, Ethics & Behavior
 Scoping review, qualitative analysis of recent literature and institutional policies.
 :::
 
-## Risks the review identifies
+## Accountability laundering
 
 ::: {.src}
 Pilatti et al. 2026, Ethics & Behavior
 :::
 
-1. Effort outsourcing and accountability laundering
-2. AI-generated review reports that are hard to detect
-3. Adversarial attacks such as prompt injection hidden in manuscripts
+- Effort outsourcing and accountability laundering is the first of the three risks the review identifies
+- Generative AI makes plausible, well-structured evaluative text cheap, while the reasoning behind it stays weakly observable
+- Reviewer effort and AI use are both hard to detect, so a reviewer can sign a report without anyone knowing how much of the judgement was theirs
+
+::: {.notes}
+Buriak et al. state the counterpart: a computer has no integrity or moral compass and cannot be held accountable.
+:::
+
+## The other two risks
+
+::: {.src}
+Pilatti et al. 2026, Ethics & Behavior
+:::
+
+- AI-generated review reports are difficult to detect
+- Adversarial attacks such as prompt injection hidden in manuscripts
 
 ## Auditable hybrid governance
 
@@ -289,11 +302,15 @@ Pilatti et al. 2026, Ethics & Behavior
 
 The goal is to make AI-assisted workflows verifiable without relying only on bans or text policing.
 
-- Confidentiality
 - Reviewer accountability
+- Granular disclosure of the tasks and content AI processed
+- Evidence-anchored auditing, with critiques tied to specific sections of the manuscript
+- Confidentiality
 - Secure infrastructure
-- Granular disclosure
-- Evidence-anchored auditing
+
+::: {.notes}
+The first three components target laundering by making the reviewer's own work checkable. The detail on disclosure and anchored critiques comes from the Open Scholarship Policy Observatory's summary of the paper.
+:::
 
 ## Why reviewers are chosen
 
@@ -372,7 +389,7 @@ The section on a responsible role for AI points to the authors' 2023 editorial o
 | Paper | Asks |
 |------------|------------------------------|
 | Wu et al. | What AI can do, and how anyone would know |
-| Pilatti et al. | What governance the risks demand |
+| Pilatti et al. | Who stays accountable when review effort is outsourced |
 | Buriak et al. | What must stay human |
 
 ## Discussion
@@ -393,6 +410,16 @@ Wu et al.
 
 ::: {.prompt}
 Does feedback from an AI land differently on the ego than feedback from a peer?
+:::
+
+## Discussion
+
+::: {.src}
+Pilatti et al.
+:::
+
+::: {.prompt}
+A reviewer signs a report whose reasoning they did not produce. Who is accountable, and how would anyone know?
 :::
 
 ## Discussion
