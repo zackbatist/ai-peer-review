@@ -218,7 +218,18 @@ Journals, internal review, friends, open platforms, blogs, journal clubs
 :::
 
 ::: {.notes}
-Transactional functions accept, reject, and route. Discursive functions give feedback, sustain argument, and mentor. Peer review also happens outside journals: in internal institutional review, in informal exchange among friends, on open platforms such as F1000 and PeerJ, on blogs and social media, and in journal clubs like this one.
+Two kinds of work happen at once.
+
+- Transactional functions accept, reject, and route
+- Discursive functions give feedback, sustain argument, and mentor
+
+It also happens outside journals.
+
+- Internal institutional review
+- Informal exchange among friends
+- Open platforms such as F1000 and PeerJ
+- Blogs and social media
+- Journal clubs like this one
 :::
 
 ## Why AI is entering peer review
@@ -236,7 +247,8 @@ Reviewers already use AI, often against guidance
 :::
 
 ::: {.notes}
-Editors struggle to find reviewers. The Nature report finds more than half of researchers already use AI in peer review, often against guidance.
+- Editors struggle to find reviewers
+- The Nature report finds more than half of researchers already use AI in peer review, often against guidance
 :::
 
 ## AI across the review pipeline
@@ -258,7 +270,17 @@ Methods for generating reviews
 :::
 
 ::: {.notes}
-The survey covers generating reviews, rebuttals, and meta-reviews, and revising papers from reviews. Review generation has received the most attention. Fine-tuning uses corpora of expert reviews. Multi-agent systems split a review into roles such as novelty checking and weakness diagnosis. Reinforcement learning optimizes against rewards for criticism, relevance, and actionability. Retrieval and iterative refinement ground the comments.
+Review is a pipeline, and most work targets its first stage.
+
+- The survey covers generating reviews, rebuttals, and meta-reviews, and revising papers from reviews
+- Review generation has received the most attention
+
+**Methods for generating reviews**
+
+- Fine-tuning on corpora of expert reviews
+- Multi-agent systems that split a review into roles, such as novelty checking and weakness diagnosis
+- Reinforcement learning against rewards for criticism, relevance, and actionability
+- Retrieval and iterative refinement to ground the comments
 :::
 
 ## Evaluation methods
@@ -289,7 +311,11 @@ Can favour authors from prestigious institutions
 :::
 
 ::: {.notes}
-LLMs mimic reviewer tone but stay weak at judging novelty. Zero-shot output tends to be generic and overly positive. Most datasets come from NLP and ML venues. The survey cites a study estimating that 6.5 to 16.9 percent of review text at top AI venues was substantially modified by LLMs, and it closes by calling for explicit disclosure of any LLM use in review.
+- LLMs mimic reviewer tone but stay weak at judging novelty
+- Zero-shot output tends to be generic and overly positive
+- Most datasets come from NLP and ML venues
+- One cited study estimates that 6.5 to 16.9 percent of review text at top AI venues was substantially modified by LLMs
+- The survey closes by calling for explicit disclosure of any LLM use in review
 :::
 
 ## Accountability laundering
@@ -316,13 +342,32 @@ The signature keeps its authority while its link to verification weakens.
 :::
 
 ::: {.notes}
-Peer review is a social technology, a pact of trust linking competence, confidentiality, and accountability. The system observes only the final report. Generative AI makes plausible, formally organized reports cheap, and workload, speed, and competition push adoption, which the authors expect to be hard to contain through prohibition alone.
+**Setup**
 
-The authors define accountability laundering as a situation in which the human signature keeps working as a seal of legitimacy while its link to the verification the signer actually performed weakens. A report can look rigorous by listing generic methodological points and stock limitations while losing specificity and fit to the manuscript. The system comes to reward fluency and rhetorical completeness over the verifiable tracing of reasons. The authors call the damage moral and institutional as well as epistemic.
+- Peer review is a social technology, a pact of trust linking competence, confidentiality, and accountability
+- The system sees only the final report
+- Generative AI makes plausible, formally organized reports cheap
+- Workload, speed, and competition push adoption, which the authors expect to be hard to contain through prohibition alone
 
-Effort outsourcing is the precondition. The ethical boundary sits where the tool stops being peripheral support and takes over the core of judgement: interpretive summarization, listing limitations, and drafting recommendations. Buriak et al. state the counterpart: a computer has no integrity or moral compass and cannot be held accountable.
+**Definition**
 
-Method: scoping review following PRISMA-ScR, 548 records identified, 10 core sources, with institutional policies used as context. The proposed model is untested, and the paper sets out hypotheses for experimental and field validation.
+- The human signature keeps working as a seal of legitimacy
+- Its link to the verification the signer actually performed weakens
+- A report can look rigorous with generic methodological points and stock limitations, while losing specificity and fit to the manuscript
+- The system rewards fluency and rhetorical completeness over verifiable reasons
+- The authors call the damage moral and institutional as well as epistemic
+
+**Precondition**
+
+- Effort outsourcing comes first
+- The boundary sits where the tool stops being peripheral support and takes over the core of judgement: interpretive summarization, listing limitations, and drafting recommendations
+- Buriak et al. make the counterpart point that a computer has no integrity or moral compass and cannot be held accountable
+
+**Method**
+
+- Scoping review following PRISMA-ScR, with 548 records identified and 10 core sources
+- Institutional policies are used as context
+- The proposed model is untested, and the paper sets out hypotheses for experimental and field validation
 :::
 
 ## Detection and adversarial threats
@@ -338,7 +383,11 @@ Hidden prompts turn the manuscript into an untrusted input
 :::
 
 ::: {.notes}
-Because detection is fragile, enforcement based on text produces formal compliance and practical opacity, and it pushes use toward external tools. Authors have hidden instructions in manuscripts to influence reviewers' AI tools. Even reviewers acting in good faith create an attack surface when they run AI on the raw text.
+- Detection is fragile
+- Enforcement based on text produces formal compliance and practical opacity
+- That pushes use toward external tools
+- Authors have hidden instructions in manuscripts to influence reviewers' AI tools
+- Even reviewers acting in good faith create an attack surface when they run AI on the raw text
 :::
 
 ## Auditable Hybrid Review
@@ -356,7 +405,17 @@ The highlighted layer targets laundering directly.
 :::
 
 ::: {.notes}
-The aim is to govern AI use so that efficiency gains do not become integrity losses. Secure infrastructure means environments the journal or institution controls, with nonretention and nontraining guarantees. Granular disclosure records the task, whether manuscript content was processed and where, and any change beyond language polishing. AI as signal, not verdict treats outputs as hypotheses the reviewer must verify and answer for. Evidence-anchored auditing samples reports and checks their anchoring in the manuscript. Adversarial resilience includes sanitizing manuscripts before any AI processing. The paper names three design invariants, confidentiality, accountability, and verifiability, and proposes tiers from a minimal regime (no external upload, granular disclosure, light auditing) to private AI environments so that smaller journals can adopt it.
+The aim is to govern AI use so that efficiency gains do not become integrity losses.
+
+- **Secure infrastructure.** Journal- or institution-controlled environments, with nonretention and nontraining guarantees
+- **Granular disclosure.** Record the task, whether manuscript content was processed and where, and any change beyond language polishing
+- **AI as signal, not verdict.** Outputs are hypotheses the reviewer must verify and answer for
+- **Evidence-anchored auditing.** Sample reports and check their anchoring in the manuscript
+- **Adversarial resilience.** Sanitize manuscripts before any AI processing
+
+The paper names three design invariants: confidentiality, accountability, and verifiability.
+
+It proposes tiers, from a minimal regime (no external upload, granular disclosure, light auditing) up to private AI environments, so smaller journals can adopt it.
 :::
 
 ## Making accountability verifiable
@@ -374,7 +433,19 @@ Auditing signals that the quality of judgement will be assessed
 :::
 
 ::: {.notes}
-Auditing replaces detection with verification. Sampled reports are checked for references to concrete points in the manuscript, justification of strong recommendations, and unverifiable claims. The authors expect this to reduce the incentive to outsource effort. They flag the trade-offs: added friction and bureaucracy could discourage reviewers, so disclosure can be a short checklist and audits can be infrequent, with 5 percent of reports given as an example. Their proposed tests include planted errors to see whether reviewers with AI access verify claims or accept them.
+- Auditing replaces detection with verification
+- Sampled reports are checked for concrete references to the manuscript, justification of strong recommendations, and unverifiable claims
+- The authors expect this to reduce the incentive to outsource effort
+
+**Trade-offs**
+
+- Added friction and bureaucracy could discourage reviewers
+- Disclosure can be a short checklist
+- Audits can be infrequent, with 5 percent of reports as their example
+
+**Proposed tests**
+
+- Planted errors, to see whether reviewers with AI access verify claims or accept them
 :::
 
 ## What LLMs can and cannot do
@@ -397,9 +468,20 @@ Buriak et al. 2026, Figure 1
 :::
 
 ::: {.notes}
-Editors choose a particular reviewer for that person's expertise, perspective, and evaluation. Reports clearly written by generative AI are still infrequent but growing, and they are superficial and error prone. Each one slows the process, because the editors have to seek out a new reviewer. The editorial's position is that peer review is a human responsibility that cannot be delegated to AI. It cites a December 2025 survey suggesting more than half of reviewers use AI assistance.
+**Thesis.** Peer review is a human responsibility that cannot be delegated to AI.
 
-The text adds that LLMs trained on existing literature may steamroll imaginative work, that they cannot yet analyze figures or evaluate the primary data in Supporting Information, and that they hallucinate citations and data. The editors doubt any existing LLM will identify breakthroughs or creative insight.
+- Editors choose a reviewer for their expertise, perspective, and evaluation
+- Reports clearly written by generative AI are infrequent but growing
+- They are superficial and error prone
+- Each one slows the process, because editors have to seek a new reviewer
+- The editorial cites a December 2025 survey suggesting more than half of reviewers use AI assistance
+
+**Beyond the figure**
+
+- LLMs trained on existing literature may steamroll imaginative work
+- They cannot yet analyze figures or evaluate the primary data in Supporting Information
+- They hallucinate citations and data
+- The editors doubt any existing LLM will identify breakthroughs or creative insight
 :::
 
 ## Confidentiality and accountability
@@ -415,7 +497,9 @@ A computer cannot be held accountable
 :::
 
 ::: {.notes}
-ACS treats uploading a manuscript to an LLM as no different from sharing a manuscript under review with a colleague or friend. The editors also do not support checking a draft report with an LLM, since a detailed review can indirectly disclose the science in the manuscript. They add an intellectual property concern: many LLMs are built by commercial entities with research interests in the same fields, and nobody can know what happens to uploaded material.
+- ACS treats uploading a manuscript to an LLM like sharing it with a colleague or friend
+- The editors also do not support checking a draft report with an LLM, since a detailed review can indirectly disclose the science in the manuscript
+- Intellectual property is a further concern: many LLMs are built by commercial entities with research interests in the same fields, and nobody can know what happens to uploaded material
 :::
 
 ## What a good review does
@@ -433,7 +517,19 @@ Tone that remembers authors are people, often students
 :::
 
 ::: {.notes}
-A good review emphasizes the scientific value of the work and the basis for the assessment, and weighs positive and negative aspects, which supports a robust literature and trainee education. Telling hype apart from creative advance is a judgement skill the editors place in the human realm. Authors are often students meeting peer review for the first time, so reviewers should reread for tone. Requests for new experiments should stay reasonable, since the reviewer is not the research director of the work. The section on a responsible role for AI points to the authors' 2023 editorial on using AI when writing manuscripts and rules out using an LLM to check a draft review. The conclusion accepts that LLMs are widely accessible and asks the community to work out how to use them while protecting peer review. The dangers section lists harms to authors, reviewers, editors, students and early career researchers, and the scientific community, including homogenization of science.
+**In this section of the editorial**
+
+- Emphasize the scientific value of the work and the basis for the assessment
+- Weigh positive and negative aspects, which supports a robust literature and trainee education
+- Telling hype from creative advance is a judgement skill the editors place in the human realm
+- Authors are often students meeting peer review for the first time, so reread for tone
+- Keep requests for new experiments reasonable, since the reviewer is not the research director of the work
+
+**Elsewhere in the editorial**
+
+- On a responsible role for AI, it points to the authors' 2023 editorial on using AI when writing manuscripts, and it rules out using an LLM to check a draft review
+- The dangers section lists harms to authors, reviewers, editors, students and early career researchers, and the scientific community, including homogenization of science
+- The conclusion accepts that LLMs are widely accessible and asks the community to work out how to use them while protecting peer review
 :::
 
 ## What each paper asks
