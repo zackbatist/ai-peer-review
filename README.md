@@ -2,6 +2,8 @@
 
 Slides for the Human-Centred AI reading group session on October 2, 2026.
 
+Peer-review is a process typically associated as a feature of scientific publishing where experts evaluate a research paper to ensure its quality, relevance, and validity. Despite its critical role in the apparatus of scientific discovery and decision-making, peer-review is affected by deep-rooted systemic challenges such as the drive to produce greater volumes of research outputs and a lack of tangible incentives to write high-quality reviews. AI has been positioned as a potentially useful resource to help mitigate against these problems, but its utility may also be a source of significant risk. In this session we discuss governance, operational, and community-building concerns relating to the use of AI in peer-review, as informed by the readings below.
+
 ## Readings
 
 - Buriak, Jillian M., Deji Akinwande, Natalie Artzi, et al. 2026. "Peer Review and AI: Your (Human) Opinion Is What Matters." *ACS Nano* 20 (4): 3171–74. <https://doi.org/10.1021/acsnano.6c00490>.
