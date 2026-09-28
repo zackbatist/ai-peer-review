@@ -178,6 +178,16 @@ format:
         html body .reveal .boxes .box .boxlabel { display: block; font-family: Georgia, "Times New Roman", serif; font-weight: 600; font-size: 1.15em; color: var(--accent); margin-bottom: 0.4em; }
         html body .reveal .columns + h3 { margin-top: 1.4em; }
         html body .reveal .boxes .box p { margin: 0; }
+        html body .reveal .roles { margin: 0.4em 0 1.6em 0; }
+        html body .reveal .roles table { font-size: 0.85em; width: 100%; }
+        html body .reveal .roles table th,
+        html body .reveal .roles table td { padding: 0.7em 0.9em; border-bottom: none; white-space: nowrap; vertical-align: middle; }
+        html body .reveal .roles table th { border-bottom: 2px solid var(--ink); }
+        html body .reveal .roles table td:first-child { font-weight: 600; }
+        html body .reveal .roles table th:nth-child(4) { color: var(--accent); }
+        html body .reveal .roles table td:nth-child(3),
+        html body .reveal .roles table th:nth-child(3) { width: 2.2em; text-align: center; color: var(--accent); padding: 0; }
+        html body .reveal .roles table td:nth-child(4) { background: var(--chip); }
         html body .reveal .chips p { display: flex; flex-wrap: wrap; gap: 0.6em; margin: 0 0 1.2em 0; align-items: center; }
         .chip { background: var(--chip); border-radius: 6px; padding: 0.5em 0.9em; font-weight: 500; font-size: 0.85em; }
         .chip.hl { background: var(--accent); color: #fff; }
@@ -467,23 +477,27 @@ The signature keeps its authority while verification weakens
 - The proposed model is untested, and the paper sets out hypotheses for experimental and field validation
 :::
 
-## From writing reviews to checking them
+## Redistributing the work of review
 
 ::: {.src}
 Pilatti et al. 2026, Ethics & Behavior
 :::
 
+::: {.roles}
+| | The risk | | The proposal |
+|----------|------------------------------|----|------------------------------|
+| Tool | Takes over the judgement | → | A signal, not a verdict |
+| Reviewer | Signs without verifying | → | Verifies and answers |
+| Institution | Sees only the finished report | → | Audits a sample of reports |
+:::
+
 ::: {.lines}
-AI drafts the review
-
-The reviewer checks the draft against the manuscript
-
-The institution audits a sample of reviews
-
-Editors cannot see the reasoning, so audits test the report
+The proposal moves effort from writing to checking
 :::
 
 ::: {.notes}
+The risk column is the paper's diagnosis. The proposal column is what the authors propose, the Auditable Hybrid Review model.
+
 **The argument**
 
 - GAI reorganizes the cost of cognitive effort. Plausible prose becomes cheap, so central evaluative steps can be outsourced: interpretive summarization, listing limitations, formulating recommendations, even drafting the report
