@@ -301,12 +301,41 @@ The goal is to make AI-assisted workflows verifiable without relying only on ban
 Buriak et al. 2026, ACS Nano
 :::
 
-- Editors invite a particular reviewer for that person's expertise and perspective
-- A growing number of reports are clearly AI-generated, superficial, and error prone
-- These reports slow the review process down
+- Editors choose a particular reviewer for that person's expertise, perspective, and evaluation
+- Reports clearly written by generative AI are still infrequent but growing, and they are superficial and error prone
+- Each one slows the process, because the editors have to seek out a new reviewer
 
 ::: {.notes}
-The editorial's position is that peer review is a human responsibility that cannot be delegated to AI. The authors cite a December 2025 survey suggesting more than half of reviewers use AI assistance.
+The editors say they could have generated a review with ChatGPT themselves if they had wanted one. The editorial cites a December 2025 survey suggesting more than half of reviewers use AI assistance. Its position is that peer review is a human responsibility that cannot be delegated to AI.
+:::
+
+## What LLMs can and cannot do
+
+::: {.src}
+Buriak et al. 2026, Figure 1
+:::
+
+::: {.columns}
+::: {.column width="45%"}
+### LLMs and humans
+
+- Research summary
+- Grammar and spelling
+- Syntax
+- Inconsistencies
+:::
+::: {.column width="45%"}
+### Humans only
+
+- Novelty assessment
+- Critical thinking
+- Experimental logic
+- Data and graphics analysis
+:::
+:::
+
+::: {.notes}
+The figure marks humans as capable of all eight tasks. The text adds that LLMs trained on existing literature may steamroll imaginative work, that they cannot yet analyze figures or evaluate the primary data in Supporting Information, and that they hallucinate citations and data. The editors doubt any existing LLM will identify breakthroughs or creative insight.
 :::
 
 ## Confidentiality and accountability
@@ -315,9 +344,13 @@ The editorial's position is that peer review is a human responsibility that cann
 Buriak et al. 2026, ACS Nano
 :::
 
-- Even a draft review can indirectly disclose the science in a manuscript, so the editors advise against checking a draft report with an LLM
-- Privacy policies for LLM tools often lack essential information about their practices
-- The editors treat review as a human responsibility that cannot be delegated to AI
+- Uploading a manuscript to an LLM breaches confidentiality and is prohibited at ACS journals, no different from sharing a manuscript under review with a colleague or friend
+- The editors also do not support checking a draft report with an LLM, since a detailed review can indirectly disclose the science in the manuscript
+- A computer has no integrity or moral compass and cannot be held accountable
+
+::: {.notes}
+The editors also raise intellectual property. Many LLMs are built by commercial entities with research interests in the same fields, and nobody can know what happens to uploaded material.
+:::
 
 ## What a good review does
 
@@ -325,12 +358,13 @@ Buriak et al. 2026, ACS Nano
 Buriak et al. 2026, ACS Nano
 :::
 
-- Weighs the positive and negative aspects of a submission, which supports a robust literature and trainee education
+- Gives a balanced report that emphasizes the scientific value of the work and explains the basis for the assessment
+- Tells hype apart from creative advance, which the editors call a judgement skill that stays in the human realm
+- Remembers that authors are people, often students meeting peer review for the first time, and rereads for tone
 - Keeps requests for new experiments reasonable, since the reviewer is not the research director of the work
-- Draws on critical thinking and experience that, in the editors' view, no LLM can replicate
 
 ::: {.notes}
-LLMs cannot evaluate the quality, completeness, or accuracy of the primary data in a manuscript's Supporting Information. The editorial's section on a responsible role for AI points back to the authors' earlier editorial on using AI when writing manuscripts.
+The section on a responsible role for AI points to the authors' 2023 editorial on using AI when writing manuscripts: properly prompted AI can spark creativity, give quick access to information, and help non-native English speakers with grammar in a draft. It rules out using an LLM to check a draft review. The conclusion accepts that LLMs are widely accessible and asks the community to work out how to use them while protecting peer review. The dangers section lists harms to authors, reviewers, editors, students and early career researchers, and the scientific community, including homogenization of science.
 :::
 
 ## What each paper asks
