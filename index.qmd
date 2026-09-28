@@ -313,6 +313,25 @@ Buriak et al. 2026, Figure 1
 - The editors doubt any existing LLM will identify breakthroughs or creative insight
 :::
 
+## Why AI is entering peer review
+
+::: {.src}
+Naddaf 2025, Nature
+:::
+
+::: {.lines}
+Submissions outgrow the pool of reviewers
+
+Reviewing earns little credit
+
+Reviewers already use AI, often against guidance
+:::
+
+::: {.notes}
+- Editors struggle to find reviewers
+- The Nature report finds more than half of researchers already use AI in peer review, often against guidance
+:::
+
 ## AI across the review pipeline
 
 ::: {.src}
@@ -365,25 +384,6 @@ Can favour authors from prestigious institutions
 - Most datasets come from NLP and ML venues
 - One cited study estimates that 6.5 to 16.9 percent of review text at top AI venues was substantially modified by LLMs
 - The survey closes by calling for explicit disclosure of any LLM use in review
-:::
-
-## Why AI is entering peer review
-
-::: {.src}
-Naddaf 2025, Nature
-:::
-
-::: {.lines}
-Submissions outgrow the pool of reviewers
-
-Reviewing earns little credit
-
-Reviewers already use AI, often against guidance
-:::
-
-::: {.notes}
-- Editors struggle to find reviewers
-- The Nature report finds more than half of researchers already use AI in peer review, often against guidance
 :::
 
 ## Accountability laundering
@@ -469,7 +469,7 @@ Pilatti et al. 2026, Ethics & Behavior
 :::
 
 ::: {.lines}
-The highlighted layer targets laundering directly.
+The tool may suggest; the reviewer must verify and answer.
 :::
 
 ::: {.notes}
@@ -533,14 +533,6 @@ A computer cannot be held accountable
 - The editors also do not support checking a draft report with an LLM, since a detailed review can indirectly disclose the science in the manuscript
 - Intellectual property is a further concern: many LLMs are built by commercial entities with research interests in the same fields, and nobody can know what happens to uploaded material
 :::
-
-## What each paper asks
-
-| Paper | Asks |
-|------------|------------------------------|
-| Buriak et al. | What must stay human |
-| Wu et al. | What AI can do, and where it falls short |
-| Pilatti et al. | Who stays accountable when review effort is outsourced |
 
 ## Discussion
 
