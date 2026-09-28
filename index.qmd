@@ -257,18 +257,19 @@ Wu et al. 2026, ACL
 The survey cites a study estimating that 6.5 to 16.9 percent of review text at top AI venues was substantially modified by LLMs. It closes by calling for explicit disclosure of any LLM use in review.
 :::
 
-## Trust and effort
+## Low observability of review work
 
 ::: {.src}
 Pilatti et al. 2026, Ethics & Behavior
 :::
 
 - Peer review is a social technology, a pact of trust linking competence, confidentiality, and accountability
-- Generative AI makes plausible evaluative text cheap to produce, while the reviewer's actual thinking stays hard to observe
-- Workload, speed, and competition drive adoption, so the authors treat AI-assisted review as difficult to reverse
+- The system observes only the final report; the reading, checking, and reasoning behind it stay invisible
+- Generative AI turns that old fragility into an active risk by making plausible, formally organized reports cheap to produce
+- Workload, speed, and competition push adoption, which the authors expect to be difficult to contain through prohibition alone
 
 ::: {.notes}
-Scoping review, qualitative analysis of recent literature and institutional policies.
+Scoping review following PRISMA-ScR: 548 records identified, 10 core sources, with institutional policies used as context. The Auditable Hybrid Review model is proposed and untested. The paper lays out hypotheses for experimental and field validation.
 :::
 
 ## Accountability laundering
@@ -277,39 +278,55 @@ Scoping review, qualitative analysis of recent literature and institutional poli
 Pilatti et al. 2026, Ethics & Behavior
 :::
 
-- Effort outsourcing and accountability laundering is the first of the three risks the review identifies
-- Generative AI makes plausible, well-structured evaluative text cheap, while the reasoning behind it stays weakly observable
-- Reviewer effort and AI use are both hard to detect, so a reviewer can sign a report without anyone knowing how much of the judgement was theirs
+- The human signature keeps working as a seal of legitimacy, while its link to the verification the signer actually performed weakens
+- A report can look rigorous by listing generic methodological points and stock limitations, while losing specificity and fit to the manuscript
+- The system comes to reward fluency and rhetorical completeness over the verifiable tracing of reasons
+- The authors call the damage moral and institutional as well as epistemic, because it erodes the expectation of accountability that trust depends on
 
 ::: {.notes}
-Buriak et al. state the counterpart: a computer has no integrity or moral compass and cannot be held accountable.
+Effort outsourcing is the precondition and laundering is the resulting institutional failure. The ethical boundary sits where the tool stops being peripheral support and takes over the core of judgement: interpretive summarization, listing limitations, and drafting recommendations. Buriak et al. state the counterpart: a computer has no integrity or moral compass and cannot be held accountable.
 :::
 
-## The other two risks
+## Detection and adversarial threats
 
 ::: {.src}
 Pilatti et al. 2026, Ethics & Behavior
 :::
 
-- AI-generated review reports are difficult to detect
-- Adversarial attacks such as prompt injection hidden in manuscripts
+- Detecting AI-written reports is fragile, so enforcement based on text produces formal compliance and practical opacity, and pushes use toward external tools
+- Authors have hidden instructions in manuscripts to influence reviewers' AI tools, which makes the manuscript an untrusted input even for reviewers acting in good faith
 
-## Auditable hybrid governance
+## Auditable Hybrid Review
 
 ::: {.src}
 Pilatti et al. 2026, Ethics & Behavior
 :::
 
-The goal is to make AI-assisted workflows verifiable without relying only on bans or text policing.
+The aim is to govern AI use so that efficiency gains do not become integrity losses.
 
-- Reviewer accountability
-- Granular disclosure of the tasks and content AI processed
-- Evidence-anchored auditing, with critiques tied to specific sections of the manuscript
-- Confidentiality
-- Secure infrastructure
+- **Secure infrastructure** controlled by the journal or institution, with nonretention guarantees
+- **Granular disclosure** of the task, what manuscript content was processed and where, and any change beyond language polishing
+- **AI as signal, not verdict**, with outputs treated as hypotheses
+- **Evidence-anchored auditing** of sampled reports
+- **Adversarial resilience**, including manuscript sanitization
 
 ::: {.notes}
-The first three components target laundering by making the reviewer's own work checkable. The detail on disclosure and anchored critiques comes from the Open Scholarship Policy Observatory's summary of the paper.
+The paper names three design invariants: confidentiality, accountability, and verifiability. It proposes tiers, from a minimal regime (no external upload, granular disclosure, light auditing) to private AI environments, so that smaller journals can adopt it.
+:::
+
+## Making accountability verifiable
+
+::: {.src}
+Pilatti et al. 2026, Ethics & Behavior
+:::
+
+- The signal-not-verdict rule targets laundering directly, since the tool may suggest and the reviewer must verify and answer
+- Any use must let the reviewer answer for every substantive claim in the report, including claims a tool first suggested
+- Auditing replaces detection with verification, checking whether sampled reports point to concrete parts of the manuscript, justify strong recommendations, and avoid unverifiable claims
+- The authors expect auditing to reduce the incentive to outsource effort, because it signals that the quality of judgement will be assessed
+
+::: {.notes}
+The authors flag the trade-offs: added friction and bureaucracy could discourage reviewers, so disclosure can be a short checklist and audits can be infrequent (they give 5 percent of reports as an example). Their proposed tests include planted errors to see whether reviewers with AI access verify claims or accept them.
 :::
 
 ## Why reviewers are chosen
