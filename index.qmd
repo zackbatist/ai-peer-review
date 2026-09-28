@@ -179,12 +179,14 @@ format:
 
 - Vets knowledge
 - Gatekeeps
+- Routes work to venues
 :::
 ::: {.column width="45%"}
 ### Discursive
 
 - Gives authors feedback
-- Builds community
+- Sustains argument
+- Builds community and mentors
 :::
 :::
 
@@ -197,85 +199,11 @@ format:
 - Blogs and social media
 - Journal clubs, including this one
 
-## The pressure
+## Why AI is entering peer review
 
 - Submissions grow faster than the pool of reviewers
 - Editors struggle to find reviewers, and reviewing earns little credit
 - More than half of researchers already use AI in peer review, often against guidance (Naddaf 2025, *Nature*)
-
-## Why reviewers are chosen
-
-::: {.src}
-Buriak et al. 2026, ACS Nano
-:::
-
-- Editors invite a particular reviewer for that person's expertise and perspective
-- A growing number of reports are clearly AI-generated, superficial, and error prone
-- These reports slow the review process down
-
-::: {.notes}
-The editorial's position is that peer review is a human responsibility that cannot be delegated to AI. The authors cite a December 2025 survey suggesting more than half of reviewers use AI assistance.
-:::
-
-## Confidentiality and accountability
-
-::: {.src}
-Buriak et al. 2026, ACS Nano
-:::
-
-- A good review is detailed and can contain identifying details, so the editors advise against using an LLM even to check a draft report
-- Privacy policies for LLM tools often lack essential information about their practices
-- The editors treat review as a human responsibility that cannot be delegated to AI
-
-## Where AI is acceptable
-
-::: {.src}
-Buriak et al. 2026, ACS Nano
-:::
-
-The editors support AI on the author side, when drafting a manuscript.
-
-- Sparking creativity
-- Quick access to background information
-- Grammar and drafting help for non-native English speakers
-
-## Trust and effort
-
-::: {.src}
-Pilatti et al. 2026, Ethics & Behavior
-:::
-
-- Peer review is a social technology, a pact of trust linking competence, confidentiality, and accountability
-- Generative AI makes plausible evaluative text cheap to produce, while the reviewer's actual thinking stays hard to observe
-- Workload, speed, and competition drive adoption, so the authors treat AI-assisted review as difficult to reverse
-
-::: {.notes}
-Scoping review, qualitative analysis of recent literature and institutional policies.
-:::
-
-## Risks the review identifies
-
-::: {.src}
-Pilatti et al. 2026, Ethics & Behavior
-:::
-
-1. Effort outsourcing and accountability laundering
-2. AI-generated review reports that are hard to detect
-3. Adversarial attacks such as prompt injection hidden in manuscripts
-
-## Auditable hybrid governance
-
-::: {.src}
-Pilatti et al. 2026, Ethics & Behavior
-:::
-
-The goal is to make AI-assisted workflows verifiable without relying only on bans or text policing.
-
-- Confidentiality
-- Reviewer accountability
-- Secure infrastructure
-- Granular disclosure
-- Evidence-anchored auditing
 
 ## The review pipeline
 
@@ -329,36 +257,108 @@ Wu et al. 2026, ACL
 The survey cites a study estimating that 6.5 to 16.9 percent of review text at top AI venues was substantially modified by LLMs. It closes by calling for explicit disclosure of any LLM use in review.
 :::
 
+## Trust and effort
+
+::: {.src}
+Pilatti et al. 2026, Ethics & Behavior
+:::
+
+- Peer review is a social technology, a pact of trust linking competence, confidentiality, and accountability
+- Generative AI makes plausible evaluative text cheap to produce, while the reviewer's actual thinking stays hard to observe
+- Workload, speed, and competition drive adoption, so the authors treat AI-assisted review as difficult to reverse
+
+::: {.notes}
+Scoping review, qualitative analysis of recent literature and institutional policies.
+:::
+
+## Risks the review identifies
+
+::: {.src}
+Pilatti et al. 2026, Ethics & Behavior
+:::
+
+1. Effort outsourcing and accountability laundering
+2. AI-generated review reports that are hard to detect
+3. Adversarial attacks such as prompt injection hidden in manuscripts
+
+## Auditable hybrid governance
+
+::: {.src}
+Pilatti et al. 2026, Ethics & Behavior
+:::
+
+The goal is to make AI-assisted workflows verifiable without relying only on bans or text policing.
+
+- Confidentiality
+- Reviewer accountability
+- Secure infrastructure
+- Granular disclosure
+- Evidence-anchored auditing
+
+## Why reviewers are chosen
+
+::: {.src}
+Buriak et al. 2026, ACS Nano
+:::
+
+- Editors invite a particular reviewer for that person's expertise and perspective
+- A growing number of reports are clearly AI-generated, superficial, and error prone
+- These reports slow the review process down
+
+::: {.notes}
+The editorial's position is that peer review is a human responsibility that cannot be delegated to AI. The authors cite a December 2025 survey suggesting more than half of reviewers use AI assistance.
+:::
+
+## Confidentiality and accountability
+
+::: {.src}
+Buriak et al. 2026, ACS Nano
+:::
+
+- Even a draft review can indirectly disclose the science in a manuscript, so the editors advise against checking a draft report with an LLM
+- Privacy policies for LLM tools often lack essential information about their practices
+- The editors treat review as a human responsibility that cannot be delegated to AI
+
+## What a good review does
+
+::: {.src}
+Buriak et al. 2026, ACS Nano
+:::
+
+- Weighs the positive and negative aspects of a submission, which supports a robust literature and trainee education
+- Keeps requests for new experiments reasonable, since the reviewer is not the research director of the work
+- Draws on critical thinking and experience that, in the editors' view, no LLM can replicate
+
+::: {.notes}
+LLMs cannot evaluate the quality, completeness, or accuracy of the primary data in a manuscript's Supporting Information. The editorial's section on a responsible role for AI points back to the authors' earlier editorial on using AI when writing manuscripts.
+:::
+
 ## What each paper asks
 
 | Paper | Asks |
 |------------|------------------------------|
-| Buriak et al. | What must stay human |
-| Pilatti et al. | What governance the risks demand |
 | Wu et al. | What AI can do, and how anyone would know |
+| Pilatti et al. | What governance the risks demand |
+| Buriak et al. | What must stay human |
 
 ## Discussion
 
 ::: {.src}
-Buriak et al.
+Wu et al.
 :::
 
 ::: {.prompt}
-Who is peer review for?
-:::
-
-::: {.muted}
-Authors, editors, readers, and reviewers themselves all have a claim.
+If AI review scores well on the survey's criteria, does that expose peer review as bureaucracy, or do the criteria miss the discursive function?
 :::
 
 ## Discussion
 
 ::: {.src}
-Buriak et al.
+Wu et al.
 :::
 
 ::: {.prompt}
-A reviewer who reads closely learns from the paper. If AI does the reading, what happens to that learning and to the community it builds?
+Does feedback from an AI land differently on the ego than feedback from a peer?
 :::
 
 ## Discussion
@@ -384,26 +384,26 @@ Homogenized, biased reviews or reviewers withdrawing effort. Which failure is wo
 ## Discussion
 
 ::: {.src}
-Wu et al.
+Buriak et al.
 :::
 
 ::: {.prompt}
-If AI review scores well on the survey's criteria, does that expose peer review as bureaucracy, or do the criteria miss the discursive function?
+A reviewer who reads closely learns from the paper. If AI does the reading, what happens to that learning and to the community it builds?
 :::
 
 ## Discussion
 
 ::: {.src}
-Wu et al.
+Buriak et al.
 :::
 
 ::: {.prompt}
-Does feedback from an AI land differently on the ego than feedback from a peer?
+Who is peer review for?
 :::
 
-## Next session
-
-Volunteers for next week.
+::: {.muted}
+Authors, editors, readers, and reviewers themselves all have a claim.
+:::
 
 ## Reading list
 
