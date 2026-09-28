@@ -1,0 +1,447 @@
+---
+title: "AI and Scientific Peer Review"
+subtitle: "Human-Centred AI Reading Group"
+author: "Zack Batist"
+date: "October 2, 2026"
+date-format: "MMMM D, YYYY"
+format:
+  revealjs:
+    theme: simple
+    width: 1280
+    height: 720
+    margin: 0.1
+    center: false
+    slide-number: false
+    controls: false
+    menu: false
+    progress: false
+    transition: none
+    embed-resources: true
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    include-after-body:
+      text: |
+        <style>
+        :root {
+          --ink: #1d1d1b;
+          --muted: #6e6b64;
+          --accent: #9b3a2f;
+          --rule: #dcd7cc;
+          --bg: #faf8f3;
+          --chip: #efeadf;
+        }
+
+        html, body, html body .reveal-viewport { background: var(--bg) !important; }
+
+        html body .reveal {
+          font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+          font-size: 34px;
+          color: var(--ink);
+        }
+
+        html body .reveal .slides section {
+          text-align: left;
+          padding: 0;
+        }
+
+        html body .reveal h1,
+        html body .reveal h2,
+        html body .reveal h3 {
+          font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+          font-weight: 600;
+          text-transform: none;
+          letter-spacing: 0;
+          color: var(--ink);
+          line-height: 1.15;
+        }
+
+        html body .reveal h2 {
+          font-size: 1.65em;
+          margin: 0 0 0.8em 0;
+          padding-bottom: 0.35em;
+          border-bottom: 1px solid var(--rule);
+        }
+
+        html body .reveal h3 {
+          font-size: 1.15em;
+          margin: 0 0 0.6em 0;
+          color: var(--accent);
+        }
+
+        html body .reveal p {
+          margin: 0 0 0.8em 0;
+          line-height: 1.4;
+        }
+
+        html body .reveal ul,
+        html body .reveal ol {
+          display: block;
+          margin: 0;
+          padding-left: 1.1em;
+        }
+
+        html body .reveal .slide ul li,
+        html body .reveal .slide ol li {
+          margin-top: 0;
+          margin-bottom: 0.7em;
+          line-height: 1.4;
+          padding-left: 0.2em;
+        }
+
+        html body .reveal li::marker { color: var(--accent); }
+
+        html body .reveal .columns { gap: 4em; }
+
+        html body .reveal table {
+          border-collapse: collapse;
+          width: 100%;
+          font-size: 0.82em;
+          margin: 0;
+        }
+
+        html body .reveal table th {
+          text-align: left;
+          font-weight: 600;
+          color: var(--muted);
+          border-bottom: 2px solid var(--ink);
+          padding: 0.5em 1em 0.5em 0;
+        }
+
+        html body .reveal table td {
+          text-align: left;
+          border-bottom: 1px solid var(--rule);
+          padding: 0.7em 1em 0.7em 0;
+          vertical-align: top;
+          line-height: 1.35;
+        }
+
+        html body .reveal table td:first-child { font-weight: 600; white-space: nowrap; }
+
+        html body .reveal .footer,
+        html body .reveal .footer p {
+          font-family: "Inter", sans-serif;
+          font-size: 0.5em;
+          color: var(--muted);
+          left: 0;
+          text-align: left;
+        }
+
+        html body .reveal .quarto-title-block,
+        html body .reveal .quarto-title-block * { text-align: left !important; }
+        html body .reveal .quarto-title-block { padding-top: 1.6em; }
+        html body .reveal .quarto-title-authors { justify-content: flex-start !important; margin: 0; }
+        html body .reveal .quarto-title-author-name { margin: 0; padding: 0; }
+        html body .reveal .quarto-title-authors > *, html body .reveal .quarto-title-author { padding-left: 0 !important; margin-left: 0 !important; }
+        html body .reveal .quarto-title-block h1.title { font-size: 2.6em; border: none; margin: 0 0 0.3em 0; padding: 0; }
+        html body .reveal .quarto-title-block .subtitle { font-size: 1.15em; color: var(--accent); margin: 0 0 2.2em 0; }
+        html body .reveal .quarto-title-block .author,
+        html body .reveal .quarto-title-block .date { font-size: 0.85em; color: var(--muted); margin: 0 0 0.3em 0; }
+
+        .stat {
+          font-family: "Source Serif 4", Georgia, serif;
+          font-size: 1.55em;
+          line-height: 1.25;
+          margin-top: 1.2em;
+          padding-left: 0.8em;
+          border-left: 4px solid var(--accent);
+        }
+        .stat small {
+          display: block;
+          margin-top: 0.5em;
+          font-family: "Inter", sans-serif;
+          font-size: 0.5em;
+          color: var(--muted);
+        }
+
+        .flow { margin: 1.2em 0 1.6em 0; }
+        .src {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          font-size: 0.6em;
+          color: var(--muted);
+        }
+        html body .reveal a { color: var(--accent); }
+        html body .reveal .muted a { overflow-wrap: anywhere; }
+        .flow p { display: flex; align-items: center; gap: 0.7em; margin: 0; }
+
+        .flow span.step {
+          background: var(--chip);
+          border-radius: 6px;
+          padding: 0.5em 0.9em;
+          font-weight: 500;
+          font-size: 0.85em;
+        }
+        .flow span.arrow { color: var(--accent); font-size: 0.9em; }
+
+        .prompt {
+          font-family: "Source Serif 4", Georgia, serif;
+          font-size: 1.7em;
+          line-height: 1.3;
+          margin: 0.6em 0 1em 0;
+        }
+        .muted { color: var(--muted); font-size: 0.85em; }
+        </style>
+---
+
+## What peer review does
+
+::: {.columns}
+::: {.column width="45%"}
+### Transactional
+
+- Vets knowledge
+- Gatekeeps
+- Routes work to venues
+:::
+::: {.column width="45%"}
+### Discursive
+
+- Gives authors feedback
+- Sustains argument
+- Builds community and mentors
+:::
+:::
+
+## Where it happens
+
+- Journal review
+- Internal institutional review
+- Informal review among friends
+- Open platforms such as F1000 and PeerJ
+- Blogs and social media
+- Journal clubs, including this one
+
+## The pressure
+
+- Submissions grow faster than the reviewer pool
+- Editors struggle to find reviewers
+- Reviewing earns little credit
+
+::: {.stat}
+More than half of researchers already use AI in peer review, often against guidance. <small>Naddaf 2025, *Nature*</small>
+:::
+
+## Judgement is what editors ask for
+
+::: {.src}
+Buriak et al. 2026, ACS Nano
+:::
+
+- Editors select a reviewer for their expertise and perspective, which an LLM does not supply
+- Generated reports read as superficial and error prone, with little depth, nuance, or critical perspective
+- They also slow the process for the editors who have to deal with them
+
+::: {.notes}
+Thesis of the editorial: peer review is a human responsibility that cannot be delegated to AI. The authors cite a December 2025 survey suggesting more than half of reviewers use AI assistance.
+:::
+
+## Confidentiality and accountability
+
+::: {.src}
+Buriak et al. 2026, ACS Nano
+:::
+
+- A good review is detailed enough to expose the manuscript, so the editors do not support running even a draft report through an LLM
+- LLM privacy policies often omit essential information about how data are handled
+- Accountability for the evaluation stays with the human reviewer
+
+## Where AI stays useful
+
+::: {.src}
+Buriak et al. 2026, ACS Nano
+:::
+
+Sparking creativity, fast access to information, and levelling the field for non-native English speakers drafting a manuscript.
+
+::: {.stat}
+The line falls between drafting a manuscript and judging one.
+:::
+
+## Peer review runs on trust
+
+::: {.src}
+Pilatti et al. 2026, Ethics & Behavior
+:::
+
+- Peer review works as a social technology, a pact of trust linking competence, confidentiality, and accountability
+- Generative AI makes plausible evaluative text cheap while the thinking behind a review stays largely invisible
+- Workload, speed, and competition all push toward adoption, so the authors treat AI-assisted review as hard to reverse
+
+::: {.notes}
+Scoping review, qualitative analysis of recent literature and institutional policies.
+:::
+
+## Three risks
+
+::: {.src}
+Pilatti et al. 2026, Ethics & Behavior
+:::
+
+1. Effort outsourcing and accountability laundering
+2. AI-generated review reports that are hard to detect
+3. Adversarial attacks such as prompt injection hidden in manuscripts
+
+## Auditable hybrid governance
+
+::: {.src}
+Pilatti et al. 2026, Ethics & Behavior
+:::
+
+::: {.columns}
+::: {.column width="45%"}
+- Confidentiality
+- Reviewer accountability
+- Secure infrastructure
+:::
+::: {.column width="45%"}
+- Granular disclosure
+- Evidence-anchored auditing
+:::
+:::
+
+::: {.stat}
+Bans and text policing alone cannot preserve review as responsible judgement.
+:::
+
+## Review is a pipeline
+
+::: {.src}
+Wu et al. 2026, ACL
+:::
+
+::: {.flow}
+<span class="step">Review</span><span class="arrow">→</span><span class="step">Rebuttal</span><span class="arrow">→</span><span class="step">Meta-review</span><span class="arrow">→</span><span class="step">Decision</span><span class="arrow">→</span><span class="step">Revision</span>
+:::
+
+The survey covers methods for generating reviews, writing rebuttals, drafting meta-reviews, and revising papers from reviews. Most work targets review generation.
+
+## How the systems are built
+
+::: {.src}
+Wu et al. 2026, ACL
+:::
+
+- Fine-tuning on corpora of expert reviews
+- Multi-agent systems that split a review into roles such as novelty checking and weakness diagnosis
+- Reinforcement learning against rewards for criticism, relevance, and actionability
+- Retrieval and iterative refinement to ground comments
+
+## How "good" gets measured
+
+::: {.src}
+Wu et al. 2026, ACL
+:::
+
+| Approach | Yardstick | Weakness |
+|----------|--------------------|--------------------|
+| Human-centric | Expert and user ratings, pairwise preference | Costly and subjective |
+| Reference-based | Overlap with human-written reviews | Shallow; treats human reviews as ground truth |
+| LLM-based | LLM judges | Position, verbosity, and style bias |
+| Aspect-oriented | Novelty, clarity, error types | Heavy annotation; no single score |
+
+## What the evidence shows
+
+::: {.src}
+Wu et al. 2026, ACL
+:::
+
+- LLMs mimic reviewer tone but remain weak at judging novelty
+- Zero-shot output tends to be generic and overly positive
+- Systems are open to manipulation through injection attacks
+- Models can favour authors from highly ranked institutions
+- Most datasets come from NLP and ML venues
+
+::: {.notes}
+The survey cites a study estimating that 6.5 to 16.9 percent of review text at top AI venues was substantially modified by LLMs. It closes by calling for explicit disclosure of any LLM use in review.
+:::
+
+## Three papers, three questions
+
+| Paper | Asks |
+|------------|------------------------------|
+| Buriak et al. | What must stay human |
+| Pilatti et al. | What governance the risks demand |
+| Wu et al. | What AI can do, and how anyone would know |
+
+## Discussion
+
+::: {.src}
+Buriak et al.
+:::
+
+::: {.prompt}
+Who is peer review for?
+:::
+
+::: {.muted}
+Authors, editors, readers, and reviewers themselves all have a claim.
+:::
+
+## Discussion
+
+::: {.src}
+Buriak et al.
+:::
+
+::: {.prompt}
+A reviewer who reads closely learns from the paper. If AI does the reading, what happens to that learning and to the community it builds?
+:::
+
+## Discussion
+
+::: {.src}
+Pilatti et al.
+:::
+
+::: {.prompt}
+Undisclosed use is already common. Should policy follow practice?
+:::
+
+## Discussion
+
+::: {.src}
+Pilatti et al.
+:::
+
+::: {.prompt}
+Homogenized, biased reviews or reviewers withdrawing effort. Which failure is worse?
+:::
+
+## Discussion
+
+::: {.src}
+Wu et al.
+:::
+
+::: {.prompt}
+If AI review scores well on the survey's criteria, does that expose peer review as bureaucracy, or do the criteria miss the discursive function?
+:::
+
+## Discussion
+
+::: {.src}
+Wu et al.
+:::
+
+::: {.prompt}
+Does feedback from an AI land differently on the ego than feedback from a peer?
+:::
+
+## Next session
+
+Volunteers for next week.
+
+## Reading list
+
+::: {.muted}
+Buriak, J. M., D. Akinwande, N. Artzi, et al. 2026. "Peer Review and AI: Your (Human) Opinion Is What Matters." *ACS Nano* 20 (4): 3171–74. <https://doi.org/10.1021/acsnano.6c00490>
+
+Pilatti, L. A., J. R. H. Cantorani, and F. F. D. P. S. Pinheiro. 2026. "AI-Assisted Peer Review: A Scoping Review of Governance, Ethical-Behavioral Risks, and Integrity." *Ethics & Behavior*, 1–17. <https://doi.org/10.1080/10508422.2026.2660125>
+
+Wu, S., O. Jiang, Y. Zhao, et al. 2026. "Can AI Be a Good Peer Reviewer? A Survey of Peer Review Process, Evaluation, and the Future." *Proceedings of the 64th Annual Meeting of the ACL (Volume 1: Long Papers)*. <https://doi.org/10.18653/v1/2026.acl-long.1504>
+
+Naddaf, M. 2025. "More than Half of Researchers Now Use AI for Peer Review — Often against Guidance." *Nature* 649 (8096): 273–74. <https://doi.org/10.1038/d41586-025-04066-5>
+:::

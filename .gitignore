@@ -1,0 +1,15 @@
+# Quarto
+/.quarto/
+/_site/
+/_freeze/
+*_files/
+
+# Rendered output
+*.html
+*.pdf
+
+# Editors and OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
