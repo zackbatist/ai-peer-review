@@ -178,6 +178,11 @@ format:
         html body .reveal .boxes .box .boxlabel { display: block; font-family: Georgia, "Times New Roman", serif; font-weight: 600; font-size: 1.15em; color: var(--accent); margin-bottom: 0.4em; }
         html body .reveal .columns + h3 { margin-top: 1.4em; }
         html body .reveal .boxes .box p { margin: 0; }
+        html body .reveal .boxes.chain .boxlabel { font-size: 1.05em; }
+        html body .reveal .boxes .box ul { font-size: 0.72em; padding-left: 1.1em; margin: 0; }
+        html body .reveal .boxes .box li { margin-bottom: 0.4em; }
+        html body .reveal .boxes.chain .box { position: relative; }
+        html body .reveal .boxes.chain .box:not(:last-child)::after { content: "→"; position: absolute; right: -1.5em; top: 1.1em; color: var(--accent); }
         html body .reveal .chips p { display: flex; flex-wrap: wrap; gap: 0.6em; margin: 0 0 1.2em 0; align-items: center; }
         .chip { background: var(--chip); border-radius: 6px; padding: 0.5em 0.9em; font-weight: 500; font-size: 0.85em; }
         .chip.hl { background: var(--accent); color: #fff; }
@@ -467,89 +472,74 @@ The signature keeps its authority while verification weakens
 - The proposed model is untested, and the paper sets out hypotheses for experimental and field validation
 :::
 
-## Where the effort goes
+## From producing to evaluating
 
 ::: {.src}
 Pilatti et al. 2026, Ethics & Behavior
 :::
 
-::: {.muted}
-The reviewer
-:::
+::: {.boxes .chain}
+::: {.box}
+[Tool drafts]{.boxlabel}
 
-::: {.flow}
-<span class="step">Producing the text</span><span class="arrow">→</span><span class="step hl">Answering for the reasoning</span>
+- Summarizes
+- Lists limitations
+- Drafts recommendations
 :::
+::: {.box}
+[Reviewer verifies]{.boxlabel}
 
-::: {.muted}
-The institution
+- Checks against the manuscript
+- Answers for every claim
 :::
+::: {.box}
+[Institution audits]{.boxlabel}
 
-::: {.flow}
-<span class="step">Detecting AI text</span><span class="arrow">→</span><span class="step hl">Auditing the quality of reviews</span>
+- Requires disclosure by task
+- Samples reports for anchoring
+:::
 :::
 
 ::: {.lines}
-AI reorganizes the cost of cognitive effort
+The steps that move are the ones editors can least observe
 :::
 
 ::: {.notes}
+**The argument**
+
+- GAI reorganizes the cost of cognitive effort. Plausible prose becomes cheap, so central evaluative steps can be outsourced: interpretive summarization, listing limitations, formulating recommendations, even drafting the report
+- Those steps sit exactly where diligence is least observable to editors, so they are the most vulnerable to shortcuts
+- The result is a quiet change in what counts as reviewing. Plausible prose substitutes for the patient verification that connects comment to evidence and critique to judgement
+- The focus moves from the report as a textual product to the review process as a practice of judgement and governance
+
 **The reviewer**
 
-- The paper describes GAI as a technology that reorganizes the cost of cognitive effort, not only a writing aid
-- The reviewer's role comes to be described less as text production and more as accountability
-- The reviewer is the figure who answers for inferences, relevance, the sufficiency of the reasons advanced, and the prudential choices behind the review
-- The focus shifts from the report as a textual product to the review process as a practice of judgement and governance
+- The role shifts from text production to accountability. The reviewer answers for inferences, relevance, the sufficiency of the reasons, and the prudential choices behind the review
+- Any use of AI must be compatible with imputability: the reviewer can answer for every substantive claim, including ones a tool first suggested
+- Adversarial threats add a duty, since the reviewer also becomes an element of system security
 
 **The institution**
 
-- Detecting AI text is fragile, so the authors replace a logic of detection with one of verification
-- Auditing samples reports for anchoring in the manuscript, which puts the quality of reviews under evaluation instead of the authorship of the text
-- The authors' stated logic is to shift effort from the reviewer to support systems while reducing peripheral cognitive load, and they insist that reducing workload cannot reduce responsibility
-:::
+- Detection is fragile, so governance shifts from policing text to making judgement verifiable
+- Disclosure records which tasks AI performed and whether manuscript content was processed
+- Auditing samples reports for concrete references to the manuscript, justification of strong recommendations, and unverifiable claims
+- The authors expect auditing to reduce the incentive to outsource effort, because it signals that the quality of judgement will be assessed
 
-## Auditable Hybrid Review
-
-::: {.src}
-Pilatti et al. 2026, Ethics & Behavior
-:::
-
-::: {.lines}
-The tool may suggest; the reviewer must verify and answer
-
-Auditing checks whether reports are anchored in the manuscript
-
-Auditing signals that the quality of judgement will be assessed
-:::
-
-::: {.notes}
-The aim is to govern AI use so that efficiency gains do not become integrity losses.
-
-**The five layers**
+**The five layers of the model, called Auditable Hybrid Review**
 
 - **Secure infrastructure.** Journal- or institution-controlled environments, with nonretention and nontraining guarantees
 - **Granular disclosure.** Record the task, whether manuscript content was processed and where, and any change beyond language polishing
-- **AI as signal, not verdict.** Outputs are hypotheses the reviewer must verify and answer for, including claims a tool first suggested. The paper says this layer targets laundering directly
+- **AI as signal, not verdict.** Outputs are hypotheses the reviewer must verify and answer for. The paper says this layer targets laundering directly
 - **Evidence-anchored auditing.** Sample reports and check their anchoring in the manuscript
 - **Adversarial resilience.** Sanitize manuscripts before any AI processing
 
 The paper names three design invariants: confidentiality, accountability, and verifiability. It proposes tiers, from a minimal regime (no external upload, granular disclosure, light auditing) up to private AI environments, so smaller journals can adopt it.
 
-**Auditing**
+**Trade-offs and tests**
 
-- Auditing replaces detection with verification
-- Sampled reports are checked for concrete references to the manuscript, justification of strong recommendations, and unverifiable claims
-- The authors expect this to reduce the incentive to outsource effort
-
-**Trade-offs**
-
-- Added friction and bureaucracy could discourage reviewers
-- Disclosure can be a short checklist
-- Audits can be infrequent, with 5 percent of reports as their example
-
-**Proposed tests**
-
-- Planted errors, to see whether reviewers with AI access verify claims or accept them
+- Effort should move from the reviewer to support systems for mechanical tasks, and reducing workload cannot mean reducing responsibility
+- Added friction and bureaucracy could discourage reviewers, so disclosure can be a short checklist and audits can be infrequent, with 5 percent of reports as the authors' example
+- Proposed tests include planted errors, to see whether reviewers with AI access verify claims or accept them
 :::
 
 ## Confidentiality and attack surface
