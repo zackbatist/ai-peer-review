@@ -139,21 +139,6 @@ format:
         html body .reveal .quarto-title-block .author,
         html body .reveal .quarto-title-block .date { font-size: 0.85em; color: var(--muted); margin: 0 0 0.3em 0; }
 
-        .stat {
-          font-family: "Source Serif 4", Georgia, serif;
-          font-size: 1.55em;
-          line-height: 1.25;
-          margin-top: 1.2em;
-          padding-left: 0.8em;
-          border-left: 4px solid var(--accent);
-        }
-        .stat small {
-          display: block;
-          margin-top: 0.5em;
-          font-family: "Inter", sans-serif;
-          font-size: 0.5em;
-          color: var(--muted);
-        }
 
         .flow { margin: 1.2em 0 1.6em 0; }
         .src {
@@ -194,14 +179,12 @@ format:
 
 - Vets knowledge
 - Gatekeeps
-- Routes work to venues
 :::
 ::: {.column width="45%"}
 ### Discursive
 
 - Gives authors feedback
-- Sustains argument
-- Builds community and mentors
+- Builds community
 :::
 :::
 
@@ -216,26 +199,22 @@ format:
 
 ## The pressure
 
-- Submissions grow faster than the reviewer pool
-- Editors struggle to find reviewers
-- Reviewing earns little credit
+- Submissions grow faster than the pool of reviewers
+- Editors struggle to find reviewers, and reviewing earns little credit
+- More than half of researchers already use AI in peer review, often against guidance (Naddaf 2025, *Nature*)
 
-::: {.stat}
-More than half of researchers already use AI in peer review, often against guidance. <small>Naddaf 2025, *Nature*</small>
-:::
-
-## Judgement is what editors ask for
+## Why reviewers are chosen
 
 ::: {.src}
 Buriak et al. 2026, ACS Nano
 :::
 
-- Editors select a reviewer for their expertise and perspective, which an LLM does not supply
-- Generated reports read as superficial and error prone, with little depth, nuance, or critical perspective
-- They also slow the process for the editors who have to deal with them
+- Editors invite a particular reviewer for that person's expertise and perspective
+- A growing number of reports are clearly AI-generated, superficial, and error prone
+- These reports slow the review process down
 
 ::: {.notes}
-Thesis of the editorial: peer review is a human responsibility that cannot be delegated to AI. The authors cite a December 2025 survey suggesting more than half of reviewers use AI assistance.
+The editorial's position is that peer review is a human responsibility that cannot be delegated to AI. The authors cite a December 2025 survey suggesting more than half of reviewers use AI assistance.
 :::
 
 ## Confidentiality and accountability
@@ -244,37 +223,37 @@ Thesis of the editorial: peer review is a human responsibility that cannot be de
 Buriak et al. 2026, ACS Nano
 :::
 
-- A good review is detailed enough to expose the manuscript, so the editors do not support running even a draft report through an LLM
-- LLM privacy policies often omit essential information about how data are handled
-- Accountability for the evaluation stays with the human reviewer
+- A good review is detailed and can contain identifying details, so the editors advise against using an LLM even to check a draft report
+- Privacy policies for LLM tools often lack essential information about their practices
+- The editors treat review as a human responsibility that cannot be delegated to AI
 
-## Where AI stays useful
+## Where AI is acceptable
 
 ::: {.src}
 Buriak et al. 2026, ACS Nano
 :::
 
-Sparking creativity, fast access to information, and levelling the field for non-native English speakers drafting a manuscript.
+The editors support AI on the author side, when drafting a manuscript.
 
-::: {.stat}
-The line falls between drafting a manuscript and judging one.
-:::
+- Sparking creativity
+- Quick access to background information
+- Grammar and drafting help for non-native English speakers
 
-## Peer review runs on trust
+## Trust and effort
 
 ::: {.src}
 Pilatti et al. 2026, Ethics & Behavior
 :::
 
-- Peer review works as a social technology, a pact of trust linking competence, confidentiality, and accountability
-- Generative AI makes plausible evaluative text cheap while the thinking behind a review stays largely invisible
-- Workload, speed, and competition all push toward adoption, so the authors treat AI-assisted review as hard to reverse
+- Peer review is a social technology, a pact of trust linking competence, confidentiality, and accountability
+- Generative AI makes plausible evaluative text cheap to produce, while the reviewer's actual thinking stays hard to observe
+- Workload, speed, and competition drive adoption, so the authors treat AI-assisted review as difficult to reverse
 
 ::: {.notes}
 Scoping review, qualitative analysis of recent literature and institutional policies.
 :::
 
-## Three risks
+## Risks the review identifies
 
 ::: {.src}
 Pilatti et al. 2026, Ethics & Behavior
@@ -290,23 +269,15 @@ Pilatti et al. 2026, Ethics & Behavior
 Pilatti et al. 2026, Ethics & Behavior
 :::
 
-::: {.columns}
-::: {.column width="45%"}
+The goal is to make AI-assisted workflows verifiable without relying only on bans or text policing.
+
 - Confidentiality
 - Reviewer accountability
 - Secure infrastructure
-:::
-::: {.column width="45%"}
 - Granular disclosure
 - Evidence-anchored auditing
-:::
-:::
 
-::: {.stat}
-Bans and text policing alone cannot preserve review as responsible judgement.
-:::
-
-## Review is a pipeline
+## The review pipeline
 
 ::: {.src}
 Wu et al. 2026, ACL
@@ -316,9 +287,9 @@ Wu et al. 2026, ACL
 <span class="step">Review</span><span class="arrow">→</span><span class="step">Rebuttal</span><span class="arrow">→</span><span class="step">Meta-review</span><span class="arrow">→</span><span class="step">Decision</span><span class="arrow">→</span><span class="step">Revision</span>
 :::
 
-The survey covers methods for generating reviews, writing rebuttals, drafting meta-reviews, and revising papers from reviews. Most work targets review generation.
+The survey covers generating reviews, rebuttals, and meta-reviews, and revising papers from reviews. Review generation has received the most attention.
 
-## How the systems are built
+## How systems are built
 
 ::: {.src}
 Wu et al. 2026, ACL
@@ -329,7 +300,7 @@ Wu et al. 2026, ACL
 - Reinforcement learning against rewards for criticism, relevance, and actionability
 - Retrieval and iterative refinement to ground comments
 
-## How "good" gets measured
+## Evaluation methods
 
 ::: {.src}
 Wu et al. 2026, ACL
@@ -342,7 +313,7 @@ Wu et al. 2026, ACL
 | LLM-based | LLM judges | Position, verbosity, and style bias |
 | Aspect-oriented | Novelty, clarity, error types | Heavy annotation; no single score |
 
-## What the evidence shows
+## Reported limitations
 
 ::: {.src}
 Wu et al. 2026, ACL
@@ -358,7 +329,7 @@ Wu et al. 2026, ACL
 The survey cites a study estimating that 6.5 to 16.9 percent of review text at top AI venues was substantially modified by LLMs. It closes by calling for explicit disclosure of any LLM use in review.
 :::
 
-## Three papers, three questions
+## What each paper asks
 
 | Paper | Asks |
 |------------|------------------------------|
