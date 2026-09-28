@@ -1,7 +1,8 @@
 ---
-title: "AI and Scientific Peer Review"
+title: "AI and Peer Review"
 subtitle: "Human-Centred AI Reading Group"
 author: "Zack Batist"
+institute: "[zackbatist.info/ai-peer-review](https://zackbatist.info/ai-peer-review/)"
 date: "October 2, 2026"
 date-format: "MMMM D, YYYY"
 format:
@@ -185,6 +186,25 @@ format:
         html body .reveal .check table th { padding: 0.3em 1em 0.3em 0; }
         html body .reveal .check table td:not(:first-child),
         html body .reveal .check table th:not(:first-child) { text-align: center; }
+
+        html body .reveal #title-slide { display: flex !important; flex-direction: column; }
+        html body .reveal #title-slide .quarto-title-authors,
+        html body .reveal #title-slide .quarto-title-author { display: contents; }
+        html body .reveal #title-slide .title { order: 1; }
+        html body .reveal #title-slide .subtitle { order: 2; }
+        html body .reveal #title-slide .quarto-title-author-name { order: 3; }
+        html body .reveal #title-slide .date { order: 4; }
+        html body .reveal #title-slide .quarto-title-affiliation { order: 5; font-size: 0.7em; margin: 1.2em 0 0 0; }
+        html body .reveal #title-slide .quarto-title-affiliation a { color: var(--accent); }
+        html body .reveal #title-slide::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 5.2em;
+          width: 200px;
+          height: 200px;
+          background: url(qr.svg) no-repeat center / contain;
+        }
         </style>
 ---
 

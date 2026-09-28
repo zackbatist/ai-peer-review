@@ -1,4 +1,4 @@
-# AI and Scientific Peer Review
+# AI and Peer Review
 
 Slides for the Human-Centred AI reading group session on October 2, 2026.
 
