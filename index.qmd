@@ -194,16 +194,17 @@ format:
         html body .reveal #title-slide .subtitle { order: 2; }
         html body .reveal #title-slide .quarto-title-author-name { order: 3; }
         html body .reveal #title-slide .date { order: 4; }
-        html body .reveal #title-slide .quarto-title-affiliation { order: 5; font-size: 0.7em; margin: 1.2em 0 0 0; }
+        html body .reveal #title-slide .quarto-title-affiliation { position: absolute; right: 0; top: 384px; width: 320px; margin: 0; font-size: 0.6em; white-space: nowrap; text-align: center !important; }
+        html body .reveal #title-slide .quarto-title-affiliation a { text-align: center !important; }
         html body .reveal #title-slide .quarto-title-affiliation a { color: var(--accent); }
         html body .reveal #title-slide::after {
           content: "";
           position: absolute;
           right: 0;
-          top: 5.2em;
-          width: 200px;
+          top: 177px;
+          width: 320px;
           height: 200px;
-          background: url(qr.svg) no-repeat center / contain;
+          background: url(qr.svg) no-repeat center / 200px 200px;
         }
         </style>
 ---
