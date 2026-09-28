@@ -6,7 +6,7 @@ date: "October 2, 2026"
 date-format: "MMMM D, YYYY"
 format:
   revealjs:
-    theme: simple
+    theme: white
     width: 1280
     height: 720
     margin: 0.1
@@ -17,10 +17,6 @@ format:
     progress: false
     transition: none
     embed-resources: true
-    include-in-header:
-      text: |
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     include-after-body:
       text: |
         <style>
@@ -36,7 +32,7 @@ format:
         html, body, html body .reveal-viewport { background: var(--bg) !important; }
 
         html body .reveal {
-          font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
           font-size: 34px;
           color: var(--ink);
         }
@@ -49,7 +45,7 @@ format:
         html body .reveal h1,
         html body .reveal h2,
         html body .reveal h3 {
-          font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+          font-family: Georgia, "Times New Roman", serif;
           font-weight: 600;
           text-transform: none;
           letter-spacing: 0;
@@ -121,7 +117,7 @@ format:
 
         html body .reveal .footer,
         html body .reveal .footer p {
-          font-family: "Inter", sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
           font-size: 0.5em;
           color: var(--muted);
           left: 0;
@@ -162,7 +158,7 @@ format:
         .flow span.arrow { color: var(--accent); font-size: 0.9em; }
 
         .prompt {
-          font-family: "Source Serif 4", Georgia, serif;
+          font-family: Georgia, "Times New Roman", serif;
           font-size: 1.7em;
           line-height: 1.3;
           margin: 0.6em 0 1em 0;
@@ -170,7 +166,7 @@ format:
         .muted { color: var(--muted); font-size: 0.85em; }
 
         html body .reveal .lines p {
-          font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+          font-family: Georgia, "Times New Roman", serif;
           font-size: 1.3em;
           line-height: 1.3;
           margin: 0 0 0.9em 0;
@@ -178,7 +174,7 @@ format:
         html body .reveal .boxes { display: flex; gap: 2em; margin: 0.8em 0 1.4em 0; }
         html body .reveal .boxes .box { flex: 1; background: var(--chip); border-radius: 8px; padding: 1em 1.3em; }
         html body .reveal .boxes .box.unseen { background: transparent; border: 2px dashed var(--rule); }
-        html body .reveal .boxes .box .boxlabel { display: block; font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: 1.15em; color: var(--accent); margin-bottom: 0.4em; }
+        html body .reveal .boxes .box .boxlabel { display: block; font-family: Georgia, "Times New Roman", serif; font-weight: 600; font-size: 1.15em; color: var(--accent); margin-bottom: 0.4em; }
         html body .reveal .columns + h3 { margin-top: 1.4em; }
         html body .reveal .boxes .box p { margin: 0; }
         html body .reveal .chips p { display: flex; flex-wrap: wrap; gap: 0.6em; margin: 0 0 1.2em 0; align-items: center; }
