@@ -181,6 +181,7 @@ format:
         html body .reveal .chips p { display: flex; flex-wrap: wrap; gap: 0.6em; margin: 0 0 1.2em 0; align-items: center; }
         .chip { background: var(--chip); border-radius: 6px; padding: 0.5em 0.9em; font-weight: 500; font-size: 0.85em; }
         .chip.hl { background: var(--accent); color: #fff; }
+        html body .reveal .flow span.step.hl { background: var(--accent); color: #fff; }
         html body .reveal .check table { font-size: 0.78em; }
         html body .reveal .check table td,
         html body .reveal .check table th { padding: 0.3em 1em 0.3em 0; }
@@ -433,7 +434,7 @@ The reading, checking, and reasoning behind it
 :::
 
 ::: {.lines}
-The signature keeps its authority while its link to verification weakens.
+The signature keeps its authority while verification weakens
 :::
 
 ::: {.notes}
@@ -466,24 +467,45 @@ The signature keeps its authority while its link to verification weakens.
 - The proposed model is untested, and the paper sets out hypotheses for experimental and field validation
 :::
 
-## Detection and adversarial threats
+## Where the effort goes
 
 ::: {.src}
 Pilatti et al. 2026, Ethics & Behavior
 :::
 
-::: {.lines}
-Detecting AI text is fragile, so prohibition pushes use out of sight
+::: {.muted}
+The reviewer
+:::
 
-Hidden prompts turn the manuscript into an untrusted input
+::: {.flow}
+<span class="step">Producing the text</span><span class="arrow">→</span><span class="step hl">Answering for the reasoning</span>
+:::
+
+::: {.muted}
+The institution
+:::
+
+::: {.flow}
+<span class="step">Detecting AI text</span><span class="arrow">→</span><span class="step hl">Auditing the quality of reviews</span>
+:::
+
+::: {.lines}
+AI reorganizes the cost of cognitive effort
 :::
 
 ::: {.notes}
-- Detection is fragile
-- Enforcement based on text produces formal compliance and practical opacity
-- That pushes use toward external tools
-- Authors have hidden instructions in manuscripts to influence reviewers' AI tools
-- Even reviewers acting in good faith create an attack surface when they run AI on the raw text
+**The reviewer**
+
+- The paper describes GAI as a technology that reorganizes the cost of cognitive effort, not only a writing aid
+- The reviewer's role comes to be described less as text production and more as accountability
+- The reviewer is the figure who answers for inferences, relevance, the sufficiency of the reasons advanced, and the prudential choices behind the review
+- The focus shifts from the report as a textual product to the review process as a practice of judgement and governance
+
+**The institution**
+
+- Detecting AI text is fragile, so the authors replace a logic of detection with one of verification
+- Auditing samples reports for anchoring in the manuscript, which puts the quality of reviews under evaluation instead of the authorship of the text
+- The authors' stated logic is to shift effort from the reviewer to support systems while reducing peripheral cognitive load, and they insist that reducing workload cannot reduce responsibility
 :::
 
 ## Auditable Hybrid Review
@@ -530,22 +552,37 @@ The paper names three design invariants: confidentiality, accountability, and ve
 - Planted errors, to see whether reviewers with AI access verify claims or accept them
 :::
 
-## Confidentiality and accountability
+## Confidentiality and attack surface
 
 ::: {.src}
-Buriak et al. 2026, ACS Nano
+Buriak et al. 2026; Pilatti et al. 2026
 :::
 
 ::: {.lines}
 Uploading a manuscript to an LLM breaches confidentiality
 
-A computer cannot be held accountable
+Detection is fragile, so prohibition pushes use out of sight
+
+Hidden prompts turn the manuscript into an untrusted input
 :::
 
 ::: {.notes}
+**Confidentiality (Buriak et al.)**
+
 - ACS treats uploading a manuscript to an LLM like sharing it with a colleague or friend
 - The editors also do not support checking a draft report with an LLM, since a detailed review can indirectly disclose the science in the manuscript
 - Intellectual property is a further concern: many LLMs are built by commercial entities with research interests in the same fields, and nobody can know what happens to uploaded material
+
+**Detection and prohibition (Pilatti et al.)**
+
+- Detection is fragile
+- Enforcement based on text produces formal compliance and practical opacity
+- That pushes use toward external tools, which raises the confidentiality risk
+
+**Adversarial threats (Pilatti et al.)**
+
+- Authors have hidden instructions in manuscripts to influence reviewers' AI tools
+- Even reviewers acting in good faith create an attack surface when they run AI on the raw text
 :::
 
 ## Discussion
