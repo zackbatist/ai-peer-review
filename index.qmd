@@ -492,36 +492,8 @@ Hidden prompts turn the manuscript into an untrusted input
 Pilatti et al. 2026, Ethics & Behavior
 :::
 
-::: {.chips}
-<span class="chip">Secure infrastructure</span><span class="chip">Granular disclosure</span><span class="chip hl">AI as signal, not verdict</span><span class="chip">Evidence-anchored auditing</span><span class="chip">Adversarial resilience</span>
-:::
-
 ::: {.lines}
-The tool may suggest; the reviewer must verify and answer.
-:::
-
-::: {.notes}
-The aim is to govern AI use so that efficiency gains do not become integrity losses.
-
-- **Secure infrastructure.** Journal- or institution-controlled environments, with nonretention and nontraining guarantees
-- **Granular disclosure.** Record the task, whether manuscript content was processed and where, and any change beyond language polishing
-- **AI as signal, not verdict.** Outputs are hypotheses the reviewer must verify and answer for
-- **Evidence-anchored auditing.** Sample reports and check their anchoring in the manuscript
-- **Adversarial resilience.** Sanitize manuscripts before any AI processing
-
-The paper names three design invariants: confidentiality, accountability, and verifiability.
-
-It proposes tiers, from a minimal regime (no external upload, granular disclosure, light auditing) up to private AI environments, so smaller journals can adopt it.
-:::
-
-## Making accountability verifiable
-
-::: {.src}
-Pilatti et al. 2026, Ethics & Behavior
-:::
-
-::: {.lines}
-The reviewer answers for every claim, including ones a tool suggested
+The tool may suggest; the reviewer must verify and answer
 
 Auditing checks whether reports are anchored in the manuscript
 
@@ -529,6 +501,20 @@ Auditing signals that the quality of judgement will be assessed
 :::
 
 ::: {.notes}
+The aim is to govern AI use so that efficiency gains do not become integrity losses.
+
+**The five layers**
+
+- **Secure infrastructure.** Journal- or institution-controlled environments, with nonretention and nontraining guarantees
+- **Granular disclosure.** Record the task, whether manuscript content was processed and where, and any change beyond language polishing
+- **AI as signal, not verdict.** Outputs are hypotheses the reviewer must verify and answer for, including claims a tool first suggested. The paper says this layer targets laundering directly
+- **Evidence-anchored auditing.** Sample reports and check their anchoring in the manuscript
+- **Adversarial resilience.** Sanitize manuscripts before any AI processing
+
+The paper names three design invariants: confidentiality, accountability, and verifiability. It proposes tiers, from a minimal regime (no external upload, granular disclosure, light auditing) up to private AI environments, so smaller journals can adopt it.
+
+**Auditing**
+
 - Auditing replaces detection with verification
 - Sampled reports are checked for concrete references to the manuscript, justification of strong recommendations, and unverifiable claims
 - The authors expect this to reduce the incentive to outsource effort
