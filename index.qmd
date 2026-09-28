@@ -364,25 +364,52 @@ Review is a pipeline, and most work targets its first stage.
 - Retrieval and iterative refinement to ground the comments
 :::
 
-## Reported limitations
+## What is still open
 
 ::: {.src}
 Wu et al. 2026, ACL
 :::
 
 ::: {.lines}
-Weak at judging novelty
+Novelty judgement remains weak
 
-Open to manipulation through injection attacks
+Review quality is hard to measure
 
-Can favour authors from prestigious institutions
+Evidence comes almost entirely from NLP and ML
+
+Rebuttal, meta-review, and revision are underexplored
 :::
 
 ::: {.notes}
+**Novelty**
+
 - LLMs mimic reviewer tone but stay weak at judging novelty
+- Early systems write coherent critiques but cannot tell incremental from groundbreaking work without broader context
+- Benchmarks built for novelty assessment show how hard it is
+
+**Evaluation**
+
+- Review quality is hard to quantify, and evaluation often relies on coarse metrics
+- The four approaches are human-centric, reference-based (overlap with human-written reviews), LLM-based, and aspect-oriented
+- Each trades off scalability, cost, and evaluative depth
+- Fine-grained datasets such as ReviewCritique are emerging
+
+**Evidence base**
+
+- Most datasets come from NLP and ML conferences
+- Multidisciplinary resources such as MOPRD are a start
+- Nobody yet knows whether models overfit to the language of their home domain, and the survey's own limitations section says the same
+
+**Discursive stages**
+
+- Rebuttal, meta-review, and paper revision involve richer discourse and collaborative intent, yet benchmarks are sparse
+- Some systems learn from author responses: GoodPoint defines constructive feedback as comments that are both valid and actionable, and RbtAct uses rebuttals as supervision
+
+**Also reported**
+
 - Zero-shot output tends to be generic and overly positive
-- Most datasets come from NLP and ML venues
-- One cited study estimates that 6.5 to 16.9 percent of review text at top AI venues was substantially modified by LLMs
+- Systems are open to manipulation through injection attacks
+- LLMs can favour authors from highly ranked institutions in single-blind settings
 - The survey closes by calling for explicit disclosure of any LLM use in review
 :::
 
@@ -416,6 +443,7 @@ The signature keeps its authority while its link to verification weakens.
 - The system sees only the final report
 - Generative AI makes plausible, formally organized reports cheap
 - Workload, speed, and competition push adoption, which the authors expect to be hard to contain through prohibition alone
+- A study cited by Wu et al. estimates that 6.5 to 16.9 percent of review text at top AI venues was substantially modified by LLMs, with use spiking near deadlines and among low-confidence reviews
 
 **Definition**
 
