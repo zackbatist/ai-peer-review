@@ -247,25 +247,6 @@ It also happens outside journals.
 - Journal clubs like this one
 :::
 
-## Why AI is entering peer review
-
-::: {.src}
-Naddaf 2025, Nature
-:::
-
-::: {.lines}
-Submissions outgrow the pool of reviewers
-
-Reviewing earns little credit
-
-Reviewers already use AI, often against guidance
-:::
-
-::: {.notes}
-- Editors struggle to find reviewers
-- The Nature report finds more than half of researchers already use AI in peer review, often against guidance
-:::
-
 ## What a good review does
 
 ::: {.src}
@@ -364,27 +345,6 @@ Review is a pipeline, and most work targets its first stage.
 - Retrieval and iterative refinement to ground the comments
 :::
 
-## Evaluation methods
-
-::: {.src}
-Wu et al. 2026, ACL
-:::
-
-::: {.chips}
-<span class="chip">Human-centric</span><span class="chip">Reference-based</span><span class="chip">LLM-based</span><span class="chip">Aspect-oriented</span>
-:::
-
-::: {.lines}
-Each approach trades off scalability, cost, and evaluative depth
-:::
-
-::: {.notes}
-- **Human-centric.** Expert and user ratings, pairwise preference. Costly and subjective.
-- **Reference-based.** Overlap with human-written reviews. Shallow, and treats human reviews as ground truth.
-- **LLM-based.** LLM judges. Position, verbosity, and style bias.
-- **Aspect-oriented.** Novelty, clarity, error types. Heavy annotation and no single score.
-:::
-
 ## Reported limitations
 
 ::: {.src}
@@ -405,6 +365,25 @@ Can favour authors from prestigious institutions
 - Most datasets come from NLP and ML venues
 - One cited study estimates that 6.5 to 16.9 percent of review text at top AI venues was substantially modified by LLMs
 - The survey closes by calling for explicit disclosure of any LLM use in review
+:::
+
+## Why AI is entering peer review
+
+::: {.src}
+Naddaf 2025, Nature
+:::
+
+::: {.lines}
+Submissions outgrow the pool of reviewers
+
+Reviewing earns little credit
+
+Reviewers already use AI, often against guidance
+:::
+
+::: {.notes}
+- Editors struggle to find reviewers
+- The Nature report finds more than half of researchers already use AI in peer review, often against guidance
 :::
 
 ## Accountability laundering
@@ -560,7 +539,7 @@ A computer cannot be held accountable
 | Paper | Asks |
 |------------|------------------------------|
 | Buriak et al. | What must stay human |
-| Wu et al. | What AI can do, and how anyone would know |
+| Wu et al. | What AI can do, and where it falls short |
 | Pilatti et al. | Who stays accountable when review effort is outsourced |
 
 ## Discussion
@@ -594,7 +573,7 @@ Wu et al.
 :::
 
 ::: {.prompt}
-If AI review scores well on the survey's criteria, does that expose peer review as bureaucracy, or do the criteria miss the discursive function?
+If AI reviews score well against human reviews, does that expose peer review as bureaucracy, or does the comparison miss the discursive function?
 :::
 
 ## Discussion
