@@ -178,11 +178,6 @@ format:
         html body .reveal .boxes .box .boxlabel { display: block; font-family: Georgia, "Times New Roman", serif; font-weight: 600; font-size: 1.15em; color: var(--accent); margin-bottom: 0.4em; }
         html body .reveal .columns + h3 { margin-top: 1.4em; }
         html body .reveal .boxes .box p { margin: 0; }
-        html body .reveal .boxes.chain .boxlabel { font-size: 1.05em; }
-        html body .reveal .boxes .box ul { font-size: 0.72em; padding-left: 1.1em; margin: 0; }
-        html body .reveal .boxes .box li { margin-bottom: 0.4em; }
-        html body .reveal .boxes.chain .box { position: relative; }
-        html body .reveal .boxes.chain .box:not(:last-child)::after { content: "→"; position: absolute; right: -1.5em; top: 1.1em; color: var(--accent); }
         html body .reveal .chips p { display: flex; flex-wrap: wrap; gap: 0.6em; margin: 0 0 1.2em 0; align-items: center; }
         .chip { background: var(--chip); border-radius: 6px; padding: 0.5em 0.9em; font-weight: 500; font-size: 0.85em; }
         .chip.hl { background: var(--accent); color: #fff; }
@@ -434,7 +429,7 @@ A signed, fluent report
 ::: {.box .unseen}
 [What goes unseen]{.boxlabel}
 
-The reading, checking, and reasoning behind it
+The work behind it
 :::
 :::
 
@@ -472,36 +467,20 @@ The signature keeps its authority while verification weakens
 - The proposed model is untested, and the paper sets out hypotheses for experimental and field validation
 :::
 
-## From producing to evaluating
+## From writing reviews to checking them
 
 ::: {.src}
 Pilatti et al. 2026, Ethics & Behavior
 :::
 
-::: {.boxes .chain}
-::: {.box}
-[Tool drafts]{.boxlabel}
-
-- Summarizes
-- Lists limitations
-- Drafts recommendations
-:::
-::: {.box}
-[Reviewer verifies]{.boxlabel}
-
-- Checks against the manuscript
-- Answers for every claim
-:::
-::: {.box}
-[Institution audits]{.boxlabel}
-
-- Requires disclosure by task
-- Samples reports for anchoring
-:::
-:::
-
 ::: {.lines}
-The steps that move are the ones editors can least observe
+AI drafts the review
+
+The reviewer checks the draft against the manuscript
+
+The institution audits a sample of reviews
+
+Editors cannot see the reasoning, so audits test the report
 :::
 
 ::: {.notes}
