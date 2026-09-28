@@ -266,6 +266,72 @@ Reviewers already use AI, often against guidance
 - The Nature report finds more than half of researchers already use AI in peer review, often against guidance
 :::
 
+## What a good review does
+
+::: {.src}
+Buriak et al. 2026, ACS Nano
+:::
+
+::: {.lines}
+A balanced report that explains its basis
+
+Judgement that tells hype from creative advance
+
+Tone that remembers authors are people, often students
+:::
+
+::: {.notes}
+**In this section of the editorial**
+
+- Emphasize the scientific value of the work and the basis for the assessment
+- Weigh positive and negative aspects, which supports a robust literature and trainee education
+- Telling hype from creative advance is a judgement skill the editors place in the human realm
+- Authors are often students meeting peer review for the first time, so reread for tone
+- Keep requests for new experiments reasonable, since the reviewer is not the research director of the work
+
+**Elsewhere in the editorial**
+
+- On a responsible role for AI, it points to the authors' 2023 editorial on using AI when writing manuscripts, and it rules out using an LLM to check a draft review
+- The dangers section lists harms to authors, reviewers, editors, students and early career researchers, and the scientific community, including homogenization of science
+- The conclusion accepts that LLMs are widely accessible and asks the community to work out how to use them while protecting peer review
+:::
+
+## What LLMs can and cannot do
+
+::: {.src}
+Buriak et al. 2026, Figure 1
+:::
+
+::: {.check}
+| Task | LLM | Human |
+|------------------------|--------|--------|
+| Research summary | ✓ | ✓ |
+| Grammar and spelling | ✓ | ✓ |
+| Syntax | ✓ | ✓ |
+| Inconsistencies | ✓ | ✓ |
+| Novelty assessment | ✗ | ✓ |
+| Critical thinking | ✗ | ✓ |
+| Experimental logic | ✗ | ✓ |
+| Data and graphics analysis | ✗ | ✓ |
+:::
+
+::: {.notes}
+**Thesis.** Peer review is a human responsibility that cannot be delegated to AI.
+
+- Editors choose a reviewer for their expertise, perspective, and evaluation
+- Reports clearly written by generative AI are infrequent but growing
+- They are superficial and error prone
+- Each one slows the process, because editors have to seek a new reviewer
+- The editorial cites a December 2025 survey suggesting more than half of reviewers use AI assistance
+
+**Beyond the figure**
+
+- LLMs trained on existing literature may steamroll imaginative work
+- They cannot yet analyze figures or evaluate the primary data in Supporting Information
+- They hallucinate citations and data
+- The editors doubt any existing LLM will identify breakthroughs or creative insight
+:::
+
 ## AI across the review pipeline
 
 ::: {.src}
@@ -304,12 +370,20 @@ Review is a pipeline, and most work targets its first stage.
 Wu et al. 2026, ACL
 :::
 
-| Approach | Yardstick | Weakness |
-|----------|--------------------|--------------------|
-| Human-centric | Expert and user ratings, pairwise preference | Costly and subjective |
-| Reference-based | Overlap with human-written reviews | Shallow; treats human reviews as ground truth |
-| LLM-based | LLM judges | Position, verbosity, and style bias |
-| Aspect-oriented | Novelty, clarity, error types | Heavy annotation; no single score |
+::: {.chips}
+<span class="chip">Human-centric</span><span class="chip">Reference-based</span><span class="chip">LLM-based</span><span class="chip">Aspect-oriented</span>
+:::
+
+::: {.lines}
+Each approach trades off scalability, cost, and evaluative depth
+:::
+
+::: {.notes}
+- **Human-centric.** Expert and user ratings, pairwise preference. Costly and subjective.
+- **Reference-based.** Overlap with human-written reviews. Shallow, and treats human reviews as ground truth.
+- **LLM-based.** LLM judges. Position, verbosity, and style bias.
+- **Aspect-oriented.** Novelty, clarity, error types. Heavy annotation and no single score.
+:::
 
 ## Reported limitations
 
@@ -463,42 +537,6 @@ Auditing signals that the quality of judgement will be assessed
 - Planted errors, to see whether reviewers with AI access verify claims or accept them
 :::
 
-## What LLMs can and cannot do
-
-::: {.src}
-Buriak et al. 2026, Figure 1
-:::
-
-::: {.check}
-| Task | LLM | Human |
-|------------------------|--------|--------|
-| Research summary | ✓ | ✓ |
-| Grammar and spelling | ✓ | ✓ |
-| Syntax | ✓ | ✓ |
-| Inconsistencies | ✓ | ✓ |
-| Novelty assessment | ✗ | ✓ |
-| Critical thinking | ✗ | ✓ |
-| Experimental logic | ✗ | ✓ |
-| Data and graphics analysis | ✗ | ✓ |
-:::
-
-::: {.notes}
-**Thesis.** Peer review is a human responsibility that cannot be delegated to AI.
-
-- Editors choose a reviewer for their expertise, perspective, and evaluation
-- Reports clearly written by generative AI are infrequent but growing
-- They are superficial and error prone
-- Each one slows the process, because editors have to seek a new reviewer
-- The editorial cites a December 2025 survey suggesting more than half of reviewers use AI assistance
-
-**Beyond the figure**
-
-- LLMs trained on existing literature may steamroll imaginative work
-- They cannot yet analyze figures or evaluate the primary data in Supporting Information
-- They hallucinate citations and data
-- The editors doubt any existing LLM will identify breakthroughs or creative insight
-:::
-
 ## Confidentiality and accountability
 
 ::: {.src}
@@ -517,43 +555,37 @@ A computer cannot be held accountable
 - Intellectual property is a further concern: many LLMs are built by commercial entities with research interests in the same fields, and nobody can know what happens to uploaded material
 :::
 
-## What a good review does
-
-::: {.src}
-Buriak et al. 2026, ACS Nano
-:::
-
-::: {.lines}
-A balanced report that explains its basis
-
-Judgement that tells hype from creative advance
-
-Tone that remembers authors are people, often students
-:::
-
-::: {.notes}
-**In this section of the editorial**
-
-- Emphasize the scientific value of the work and the basis for the assessment
-- Weigh positive and negative aspects, which supports a robust literature and trainee education
-- Telling hype from creative advance is a judgement skill the editors place in the human realm
-- Authors are often students meeting peer review for the first time, so reread for tone
-- Keep requests for new experiments reasonable, since the reviewer is not the research director of the work
-
-**Elsewhere in the editorial**
-
-- On a responsible role for AI, it points to the authors' 2023 editorial on using AI when writing manuscripts, and it rules out using an LLM to check a draft review
-- The dangers section lists harms to authors, reviewers, editors, students and early career researchers, and the scientific community, including homogenization of science
-- The conclusion accepts that LLMs are widely accessible and asks the community to work out how to use them while protecting peer review
-:::
-
 ## What each paper asks
 
 | Paper | Asks |
 |------------|------------------------------|
+| Buriak et al. | What must stay human |
 | Wu et al. | What AI can do, and how anyone would know |
 | Pilatti et al. | Who stays accountable when review effort is outsourced |
-| Buriak et al. | What must stay human |
+
+## Discussion
+
+::: {.src}
+Buriak et al.
+:::
+
+::: {.prompt}
+Who is peer review for?
+:::
+
+::: {.muted}
+Authors, editors, readers, and reviewers themselves all have a claim.
+:::
+
+## Discussion
+
+::: {.src}
+Buriak et al.
+:::
+
+::: {.prompt}
+A reviewer who reads closely learns from the paper. If AI does the reading, what happens to that learning and to the community it builds?
+:::
 
 ## Discussion
 
@@ -603,30 +635,6 @@ Pilatti et al.
 
 ::: {.prompt}
 Homogenized, biased reviews or reviewers withdrawing effort. Which failure is worse?
-:::
-
-## Discussion
-
-::: {.src}
-Buriak et al.
-:::
-
-::: {.prompt}
-A reviewer who reads closely learns from the paper. If AI does the reading, what happens to that learning and to the community it builds?
-:::
-
-## Discussion
-
-::: {.src}
-Buriak et al.
-:::
-
-::: {.prompt}
-Who is peer review for?
-:::
-
-::: {.muted}
-Authors, editors, readers, and reviewers themselves all have a claim.
 :::
 
 ## Reading list
