@@ -17,7 +17,7 @@ Full references are on the last slide.
 
 ## Build
 
-Needs [Quarto](https://quarto.org) 1.4 or later.
+Tested with [Quarto](https://quarto.org) 1.10.
 
 ```sh
 quarto preview index.qmd
