@@ -221,14 +221,14 @@ format:
 ## What peer review does
 
 ::: {.columns}
-::: {.column width="45%"}
+::: {.column width="50%"}
 ### Transactional
 
 - Vets knowledge
-- Gatekeeps
-- Routes work to venues
+- Routes work to stable material outcomes
+- Maintains value of academic currency
 :::
-::: {.column width="45%"}
+::: {.column width="50%"}
 ### Discursive
 
 - Gives authors feedback
@@ -239,59 +239,88 @@ format:
 
 ### Where it happens
 
-::: {.muted}
-Journals, internal review, friends, open platforms, blogs, journal clubs
-:::
+Journals, internal review, among friends and colleagues, open review platforms, blogs, journal clubs, hiring, grant review
 
 ::: {.notes}
-Two kinds of work happen at once.
+Two kinds of work happen at once:
 
-- Transactional functions accept, reject, and route
-- Discursive functions give feedback, sustain argument, and mentor
+- Transactional functions:
+  - Deciding to accept or reject knowledge claims
+  - Producing stable and material research outcomes
+  - Maintain the value of research papers, which serve as currency for hiring and promotion
+- Discursive functions:
+  - Give feedback
+  - Sustain argument
+  - Re-create disciplinary norms
 
-It also happens outside journals.
+Peer-review also occurs in settings other than journals:
 
 - Internal institutional review
 - Informal exchange among friends
-- Open platforms such as F1000 and PeerJ
+- Open peer-review platforms (such as F1000 and PeerJ)
 - Blogs and social media
 - Journal clubs like this one
+- Grant review
+- Hiring
+:::
+
+## The three papers
+
+| Paper | Source | Asks |
+|--------------|--------------------|----------------------|
+| Buriak et al. | ACS Nano editorial | What must stay human |
+| Wu et al. | ACL survey | What AI can do |
+| Pilatti et al. | Scoping review | Who stays accountable |
+
+::: {.notes}
+Three papers from three communities, so they carry different kinds of evidence.
+
+**Buriak et al.**
+
+- An editorial by journal editors, addressed to reviewers.
+- It is a position piece, and its thesis is that peer review is a human responsibility that cannot be delegated to AI.
+- It describes what makes a good review and which tasks LLMs cannot perform. That gives us a standard for assessing AI-assisted review.
+
+**Wu et al.**
+
+- This survey comes from the community that builds and evaluates AI reviewing systems, so it offers the technical perspective.
+- It sets out how such systems are designed and how their output is assessed, and it identifies the problems that remain unresolved.
+
+**Pilatti et al.**
+
+- This scoping review examines how generative AI changes accountability in peer review, drawing on the research literature and institutional policies.
+- It is about how to govern the use of AI in review so that reviewers remain accountable for their reports.
 :::
 
 ## What a good review does
 
 ::: {.src}
-Buriak et al. 2026, ACS Nano
+Buriak et al. 2026. Peer Review and AI: Your (Human) Opinion Is What Matters. ACS Nano.
+
 :::
 
 ::: {.lines}
-A balanced report that explains its basis
+Produces a balanced report explaining the basis of the review
 
-Judgement that tells hype from creative advance
+Recognizes the work's relevance to the broader field
 
-Tone that remembers authors are people, often students
+Uses a constructive tone that supports improvement
 :::
 
 ::: {.notes}
-**In this section of the editorial**
+Before we ask what AI can do, we need a standard for what constitutes a good review. The factors below are drawn from Buriak et al. and serve as criteria against which AI-generated reviews can be assessed.
 
-- Emphasize the scientific value of the work and the basis for the assessment
-- Weigh positive and negative aspects, which supports a robust literature and trainee education
-- Telling hype from creative advance is a judgement skill the editors place in the human realm
-- Authors are often students meeting peer review for the first time, so reread for tone
-- Keep requests for new experiments reasonable, since the reviewer is not the research director of the work
+The reviewer produces a balanced report that states the scientific value of the work, weighing its strengths and weaknesses.
 
-**Elsewhere in the editorial**
+The review places the work in the broader field, assessing what distinguishes the work from existing work in the area.
 
-- On a responsible role for AI, it points to the authors' 2023 editorial on using AI when writing manuscripts, and it rules out using an LLM to check a draft review
-- The dangers section lists harms to authors, reviewers, editors, students and early career researchers, and the scientific community, including homogenization of science
-- The conclusion accepts that LLMs are widely accessible and asks the community to work out how to use them while protecting peer review
+The tone is respectful and constructive, supporting authors' efforts to improve the work.
 :::
 
 ## What LLMs can and cannot do
 
 ::: {.src}
-Buriak et al. 2026, Figure 1
+Buriak et al. 2026, Figure 1.
 :::
 
 ::: {.check}
@@ -308,26 +337,20 @@ Buriak et al. 2026, Figure 1
 :::
 
 ::: {.notes}
-**Thesis.** Peer review is a human responsibility that cannot be delegated to AI.
+Buriak et al. sort the tasks of review into those an LLM can handle and those it cannot.
 
-- Editors choose a reviewer for their expertise, perspective, and evaluation
-- Reports clearly written by generative AI are infrequent but growing
-- They are superficial and error prone
-- Each one slows the process, because editors have to seek a new reviewer
-- The editorial cites a December 2025 survey suggesting more than half of reviewers use AI assistance
+An LLM can handle the surface of review: summarizing the research, checking grammar, spelling, and syntax, and catching inconsistencies.
 
-**Beyond the figure**
+It cannot assess novelty, think critically, evaluate the logic of the experiments, or analyze data and graphics.
 
-- LLMs trained on existing literature may steamroll imaginative work
-- They cannot yet analyze figures or evaluate the primary data in Supporting Information
-- They hallucinate citations and data
-- The editors doubt any existing LLM will identify breakthroughs or creative insight
+These are Buriak et al.'s judgements, not test results, but similar claims were also asserted in last week's town hall about Hugo's work on AI peer-review.
 :::
 
 ## Why AI is entering peer review
 
 ::: {.src}
-Naddaf 2025, Nature
+Naddaf 2025. More than Half of Researchers Now Use AI for Peer Review — Often against Guidance. Nature.
+
 :::
 
 ::: {.lines}
@@ -339,14 +362,15 @@ Reviewers already use AI, often against guidance
 :::
 
 ::: {.notes}
-- Editors struggle to find reviewers
-- The Nature report finds more than half of researchers already use AI in peer review, often against guidance
+LLMs are entering peer review despite these limits, because the system is under strain, specifically the fact that submissions are outpacing the pool of available reviewers, who are already extremely busy and who are not incentivized to review.
+
+Use of AI is already widespread. A December 2025 survey, reported by _Nature_, suggests that more than half of researchers now use AI in peer review, often against guidance.
 :::
 
 ## AI across the review pipeline
 
 ::: {.src}
-Wu et al. 2026, ACL
+Wu et al. 2026. Can AI Be a Good Peer Reviewer? A Survey of Peer Review Process, Evaluation, and the Future. ACL.
 :::
 
 ::: {.flow}
@@ -362,23 +386,17 @@ Methods for generating reviews
 :::
 
 ::: {.notes}
-Review is a pipeline, and most work targets its first stage.
+Given that pressure, researchers are building systems that assist or automate review. Wu et al. survey this work, and it spans the whole pipeline of review, rebuttal, meta-review, decision, and revision.
 
-- The survey covers generating reviews, rebuttals, and meta-reviews, and revising papers from reviews
-- Review generation has received the most attention
+Most of the effort goes into the first stage, generating the review. Prompting alone tends to produce generic and overly positive feedback, so researchers have developed four main approaches. Some fine-tune models on expert reviews, some use multiple agents that each take a role such as novelty checking, some train with reinforcement learning against rewards for criticism, relevance, and actionable suggestions, and some retrieve related literature and refine the draft to ground its comments.
 
-**Methods for generating reviews**
-
-- Fine-tuning on corpora of expert reviews
-- Multi-agent systems that split a review into roles, such as novelty checking and weakness diagnosis
-- Reinforcement learning against rewards for criticism, relevance, and actionability
-- Retrieval and iterative refinement to ground the comments
+The later stages involve dialogue between authors and reviewers, and they have received far less attention than review generation.
 :::
 
-## What is still open
+## Open problems in AI reviewing
 
 ::: {.src}
-Wu et al. 2026, ACL
+Wu et al. 2026.
 :::
 
 ::: {.lines}
@@ -392,254 +410,85 @@ Rebuttal, meta-review, and revision are underexplored
 :::
 
 ::: {.notes}
-**Novelty**
+Even as these systems improve, Wu et al. identify four problems that remain open.
 
-- LLMs mimic reviewer tone but stay weak at judging novelty
-- Early systems write coherent critiques but cannot tell incremental from groundbreaking work without broader context
-- Benchmarks built for novelty assessment show how hard it is
+One problem is novelty. LLMs can imitate a reviewer's tone but remain weak at judging whether work is genuinely new. Early systems write coherent critiques yet cannot distinguish incremental work from a breakthrough without broader scientific context, and benchmarks built to test novelty assessment show how difficult this remains.
 
-**Evaluation**
+Another is measuring review quality, which matters because any claim that AI review is good enough depends on how quality is measured. The common approach scores a generated review by its overlap with human-written reviews. That rewards surface similarity and says little about correctness or constructiveness. Some datasets are starting to be developed to reach beyond this limitation.
 
-- Review quality is hard to quantify, and evaluation often relies on coarse metrics
-- The four approaches are human-centric, reference-based (overlap with human-written reviews), LLM-based, and aspect-oriented
-- Each trades off scalability, cost, and evaluative depth
-- Fine-grained datasets such as ReviewCritique are emerging
+A third is the evidence base. Most peer review datasets come from NLP and ML conferences, which limits how far the findings generalize. Wu et al. note that broader coverage is needed to test whether current models overfit to domain-specific language.
 
-**Evidence base**
-
-- Most datasets come from NLP and ML conferences
-- Multidisciplinary resources such as MOPRD are a start
-- Nobody yet knows whether models overfit to the language of their home domain, and the survey's own limitations section says the same
-
-**Discursive stages**
-
-- Rebuttal, meta-review, and paper revision involve richer discourse and collaborative intent, yet benchmarks are sparse
-- Some systems learn from author responses: GoodPoint defines constructive feedback as comments that are both valid and actionable, and RbtAct uses rebuttals as supervision
-
-**Also reported**
-
-- Zero-shot output tends to be generic and overly positive
-- Systems are open to manipulation through injection attacks
-- LLMs can favour authors from highly ranked institutions in single-blind settings
-- The survey closes by calling for explicit disclosure of any LLM use in review
+The last concerns the steps after the review. Rebuttal, meta-review, and revision involve richer argument and collaboration between authors and reviewers, yet benchmarks for them are sparse.
 :::
 
-## Accountability laundering
+## AI-assisted review is a governance problem
 
 ::: {.src}
-Pilatti et al. 2026, Ethics & Behavior
-:::
-
-::: {.boxes}
-::: {.box}
-[What the editor sees]{.boxlabel}
-
-A signed, fluent report
-:::
-::: {.box .unseen}
-[What goes unseen]{.boxlabel}
-
-The work behind it
-:::
+Pilatti et al. 2026. AI-Assisted Peer Review: A Scoping Review of Governance, Ethical-Behavioral Risks, and Integrity. Ethics & Behavior.
 :::
 
 ::: {.lines}
-The signature keeps its authority while verification weakens
+Prohibition and detection alone will not contain AI use
+
+Governance has to make judgement verifiable
 :::
+
+| Risk | What goes wrong |
+|------------------------|------------------------------------|
+| Accountability laundering | A signed report vouches for unchecked work |
+| AI reports that evade detection | Bans fail, and hidden use exposes manuscripts |
+| Prompt injection | Hidden instructions steer reviewers' AI tools |
 
 ::: {.notes}
-**Setup**
+Wu et al. survey AI systems built to generate the review, and Pilatti et al. ask how the governance of peer review has to change once those systems are in use.
 
-- Peer review is a social technology, a pact of trust linking competence, confidentiality, and accountability
-- The system sees only the final report
-- Generative AI makes plausible, formally organized reports cheap
-- Workload, speed, and competition push adoption, which the authors expect to be hard to contain through prohibition alone
-- A study cited by Wu et al. estimates that 6.5 to 16.9 percent of review text at top AI venues was substantially modified by LLMs, with use spiking near deadlines and among low-confidence reviews
+Pilatti's scoping review treats AI-assisted review as a problem of institutional governance that goes beyond individual conduct. Prohibition and detection cannot stop reviewers from using AI, because that use is hard to see, so they argue that governance has to make judgement verifiable.
 
-**Definition**
-
-- The human signature keeps working as a seal of legitimacy
-- Its link to the verification the signer actually performed weakens
-- A report can look rigorous with generic methodological points and stock limitations, while losing specificity and fit to the manuscript
-- The system rewards fluency and rhetorical completeness over verifiable reasons
-- The authors call the damage moral and institutional as well as epistemic
-
-**Precondition**
-
-- Effort outsourcing comes first
-- The boundary sits where the tool stops being peripheral support and takes over the core of judgement: interpretive summarization, listing limitations, and drafting recommendations
-- Buriak et al. make the counterpart point that a computer has no integrity or moral compass and cannot be held accountable
-
-**Method**
-
-- Scoping review following PRISMA-ScR, with 548 records identified and 10 core sources
-- Institutional policies are used as context
-- The proposed model is untested, and the paper sets out hypotheses for experimental and field validation
+The authors identify three risks. Reviewers may outsource the central steps of a review to AI, which leads to accountability laundering, in which a report still carries a named reviewer's endorsement although no one checked the work behind it. AI-generated reports are also hard to detect, so rules against AI use are hard to enforce. Furthermore, reviewers who use AI out of sight tend to rely on external tools, which breaches confidentiality. Finally, authors have injected prompts in manuscripts to manipulate the AI tools that reviewers use.
 :::
 
-## Redistributing the work of review
+## Making judgement verifiable
 
 ::: {.src}
-Pilatti et al. 2026, Ethics & Behavior
+Pilatti et al. 2026.
 :::
 
-::: {.roles}
-| | The risk | | The proposal |
-|----------|------------------------------|----|------------------------------|
-| Tool | Takes over the judgement | → | A signal, not a verdict |
-| Reviewer | Signs without verifying | → | Verifies and answers |
-| Institution | Sees only the finished report | → | Audits a sample of reports |
-:::
-
-::: {.lines}
-The proposal moves effort from writing to checking
-:::
+| Risk | Response |
+|------------------------|------------------------------------|
+| Accountability laundering | Reviewers verify; journals audit a sample |
+| AI reports that evade detection | Reviewers disclose AI use; journals control the tools |
+| Prompt injection | Journals sanitize manuscripts before AI processing |
 
 ::: {.notes}
-The risk column is the paper's diagnosis. The proposal column is what the authors propose, the Auditable Hybrid Review model.
+Pilatti et al. conclude that peer review stays a practice of responsible judgement only if AI-assisted work becomes more verifiable. For each of the three risks, they propose responses that reviewers and institutions can carry out and check.
 
-**The argument**
+To counter accountability laundering, Pilatti et al. suggest treating AI output as a suggestion only. The reviewer checks each suggestion against the manuscript and answers for every claim in the report, including claims the tool raised first. The journal then audits a sample of reports, asking whether the comments point to specific sections, figures, or tables, whether strong recommendations are justified, and whether any claims cannot be verified.
 
-- GAI reorganizes the cost of cognitive effort. Plausible prose becomes cheap, so central evaluative steps can be outsourced: interpretive summarization, listing limitations, formulating recommendations, even drafting the report
-- Those steps sit exactly where diligence is least observable to editors, so they are the most vulnerable to shortcuts
-- The result is a quiet change in what counts as reviewing. Plausible prose substitutes for the patient verification that connects comment to evidence and critique to judgement
-- The focus moves from the report as a textual product to the review process as a practice of judgement and governance
+For reports that evade detection, Pilatti et al. propose requiring specific disclosure of the task AI performed, whether manuscript content was processed and under what conditions, and whether the tool transformed the report beyond language polishing. They argue that this gives reviewers a regulated path for uses that are likely to happen anyway, which reduces the incentive to conceal them, but they list whether it works as a hypothesis to test. AI used on a manuscript should preferably run in an environment controlled by the journal or another institution, with guarantees that the manuscript is not retained or used for training. More robust regimes have journals offer internal tools, with access logs for later investigation.
 
-**The reviewer**
+For prompt injection, manuscripts are sanitized before any AI processing. That means removing invisible text, normalizing formatting, and flagging suspicious elements, which reduces the attack surface.
 
-- The role shifts from text production to accountability. The reviewer answers for inferences, relevance, the sufficiency of the reasons, and the prudential choices behind the review
-- Any use of AI must be compatible with imputability: the reviewer can answer for every substantive claim, including ones a tool first suggested
-- Adversarial threats add a duty, since the reviewer also becomes an element of system security
-
-**The institution**
-
-- Detection is fragile, so governance shifts from policing text to making judgement verifiable
-- Disclosure records which tasks AI performed and whether manuscript content was processed
-- Auditing samples reports for concrete references to the manuscript, justification of strong recommendations, and unverifiable claims
-- The authors expect auditing to reduce the incentive to outsource effort, because it signals that the quality of judgement will be assessed
-
-**The five layers of the model, called Auditable Hybrid Review**
-
-- **Secure infrastructure.** Journal- or institution-controlled environments, with nonretention and nontraining guarantees
-- **Granular disclosure.** Record the task, whether manuscript content was processed and where, and any change beyond language polishing
-- **AI as signal, not verdict.** Outputs are hypotheses the reviewer must verify and answer for. The paper says this layer targets laundering directly
-- **Evidence-anchored auditing.** Sample reports and check their anchoring in the manuscript
-- **Adversarial resilience.** Sanitize manuscripts before any AI processing
-
-The paper names three design invariants: confidentiality, accountability, and verifiability. It proposes tiers, from a minimal regime (no external upload, granular disclosure, light auditing) up to private AI environments, so smaller journals can adopt it.
-
-**Trade-offs and tests**
-
-- Effort should move from the reviewer to support systems for mechanical tasks, and reducing workload cannot mean reducing responsibility
-- Added friction and bureaucracy could discourage reviewers, so disclosure can be a short checklist and audits can be infrequent, with 5 percent of reports as the authors' example
-- Proposed tests include planted errors, to see whether reviewers with AI access verify claims or accept them
+Effort shifts from writing reviews to checking them. The reviewer checks the tool, and the journal checks the reviews. Pilatti et al. add that reducing workload cannot mean reducing responsibility.
 :::
 
-## Confidentiality and attack surface
+## Discussion
 
-::: {.src}
-Buriak et al. 2026; Pilatti et al. 2026
-:::
-
-::: {.lines}
-Uploading a manuscript to an LLM breaches confidentiality
-
-Detection is fragile, so prohibition pushes use out of sight
-
-Hidden prompts turn the manuscript into an untrusted input
-:::
+1. Who is peer review for?
+2. How should review work be divided between AI and the reviewer?
+3. Is resemblance to human reviews the right test of an AI review's quality?
+4. Do authors take criticism from an AI differently than from a peer?
+5. Who is accountable for reasoning the reviewer did not produce?
 
 ::: {.notes}
-**Confidentiality (Buriak et al.)**
+1. Buriak et al. say reviewers provide a critical, essential service to the scientific community, and that good reviews help authors improve and support a robust literature and trainee education. Pilatti et al. describe review as a pact of trust that links competence, confidentiality, and accountability to editorial decisions and the credibility of the scientific record. Each answer implies something different about what is worth automating.
 
-- ACS treats uploading a manuscript to an LLM like sharing it with a colleague or friend
-- The editors also do not support checking a draft report with an LLM, since a detailed review can indirectly disclose the science in the manuscript
-- Intellectual property is a further concern: many LLMs are built by commercial entities with research interests in the same fields, and nobody can know what happens to uploaded material
+2. Buriak et al. separate what an LLM can do from what it may be used for. An LLM can summarize the research, check grammar, spelling, and syntax, and catch inconsistencies. It cannot assess novelty, think critically, judge the logic of experiments, or analyze data and figures. Buriak et al. also prohibit uploading a manuscript to an LLM for review, and they do not support using one even to check a draft of a reviewer report. Pilatti et al. draw the line by risk. They count language editing of the reviewer's own report as a low-exposure use, and they treat summarizing the manuscript, listing limitations, and drafting recommendations as the central steps that are easiest to outsource. Their rule is that the system should relieve mechanical tasks and leave the judgement with the reviewer.
 
-**Detection and prohibition (Pilatti et al.)**
+3. Wu et al.'s reference-based evaluation assumes that a better AI review overlaps more with human-written reviews. They say such metrics often capture lexical or semantic overlap more than scientific validity, reasoning quality, or constructiveness, and can penalize valid feedback that is phrased differently. Human reviews are also imperfect. Buriak et al. cite unchecked bias, conflicts of interest, and gatekeeping, and Pilatti et al. cite a study finding that citations and self-citations influence reviews. The question is whether resemblance to human reviews is the right test of an AI review's quality.
 
-- Detection is fragile
-- Enforcement based on text produces formal compliance and practical opacity
-- That pushes use toward external tools, which raises the confidentiality risk
+4. Buriak et al. say generic, formulaic AI-generated reviews can leave authors discouraged, disillusioned, and frustrated, and they note that manuscripts often include students for whom this is a first exposure to peer review. In a user study cited by Wu et al., 308 researchers received LLM-generated feedback on their own papers and perceived it as valuable. None of the three papers compares how authors react to AI feedback and to peer feedback, so this question goes beyond them.
 
-**Adversarial threats (Pilatti et al.)**
-
-- Authors have hidden instructions in manuscripts to influence reviewers' AI tools
-- Even reviewers acting in good faith create an attack surface when they run AI on the raw text
-:::
-
-## Discussion
-
-::: {.src}
-Buriak et al.
-:::
-
-::: {.prompt}
-Who is peer review for?
-:::
-
-::: {.muted}
-Authors, editors, readers, and reviewers themselves all have a claim.
-:::
-
-## Discussion
-
-::: {.src}
-Buriak et al.
-:::
-
-::: {.prompt}
-A reviewer who reads closely learns from the paper. If AI does the reading, what happens to that learning and to the community it builds?
-:::
-
-## Discussion
-
-::: {.src}
-Wu et al.
-:::
-
-::: {.prompt}
-If AI reviews score well against human reviews, does that expose peer review as bureaucracy, or does the comparison miss the discursive function?
-:::
-
-## Discussion
-
-::: {.src}
-Wu et al.
-:::
-
-::: {.prompt}
-Does feedback from an AI land differently on the ego than feedback from a peer?
-:::
-
-## Discussion
-
-::: {.src}
-Pilatti et al.
-:::
-
-::: {.prompt}
-A reviewer signs a report whose reasoning they did not produce. Who is accountable, and how would anyone know?
-:::
-
-## Discussion
-
-::: {.src}
-Pilatti et al.
-:::
-
-::: {.prompt}
-Undisclosed use is already common. Should policy follow practice?
-:::
-
-## Discussion
-
-::: {.src}
-Pilatti et al.
-:::
-
-::: {.prompt}
-Homogenized, biased reviews or reviewers withdrawing effort. Which failure is worse?
+5. Pilatti et al. place accountability with the reviewer, who must be able to answer for every substantive claim in the report, including claims a tool suggested first. Buriak et al. add that a computer cannot be held accountable. How anyone would know is the harder part. Pilatti et al. propose that journals audit a sample of reports for comments anchored in the manuscript, and that reviewers disclose how they used AI.
 :::
 
 ## Reading list
