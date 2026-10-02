@@ -310,11 +310,9 @@ Uses a constructive tone that supports improvement
 ::: {.notes}
 Before we ask what AI can do, we need a standard for what constitutes a good review. The factors below are drawn from Buriak et al. and serve as criteria against which AI-generated reviews can be assessed.
 
-The reviewer produces a balanced report that states the scientific value of the work, weighing its strengths and weaknesses.
-
-The review places the work in the broader field, assessing what distinguishes the work from existing work in the area.
-
-The tone is respectful and constructive, supporting authors' efforts to improve the work.
+- The reviewer produces a balanced report that states the scientific value of the work, weighing its strengths and weaknesses.
+- The review places the work in the broader field, assessing what distinguishes the work from existing work in the area.
+- The tone is respectful and constructive, supporting authors' efforts to improve the work.
 :::
 
 ## What LLMs can and cannot do
@@ -337,13 +335,13 @@ Buriak et al. 2026, Figure 1.
 :::
 
 ::: {.notes}
-Buriak et al. sort the tasks of review into those an LLM can handle and those it cannot.
+Buriak et al. sort the tasks of review into those an LLM can handle and those it cannot:
 
 An LLM can handle the surface of review: summarizing the research, checking grammar, spelling, and syntax, and catching inconsistencies.
 
-It cannot assess novelty, think critically, evaluate the logic of the experiments, or analyze data and graphics.
+However, according to Buriak et al., it cannot assess novelty, think critically, evaluate the logic of the experiments, or analyze data and graphics.
 
-These are Buriak et al.'s judgements, not test results, but similar claims were also asserted in last week's town hall about Hugo's work on AI peer-review.
+These are their judgements, not test results, but similar claims were also asserted in last week's town hall about Hugo's work on AI peer-review.
 :::
 
 ## Why AI is entering peer review
@@ -388,7 +386,11 @@ Methods for generating reviews
 ::: {.notes}
 Given that pressure, researchers are building systems that assist or automate review. Wu et al. survey this work, and it spans the whole pipeline of review, rebuttal, meta-review, decision, and revision.
 
-Most of the effort goes into the first stage, generating the review. Prompting alone tends to produce generic and overly positive feedback, so researchers have developed four main approaches. Some fine-tune models on expert reviews, some use multiple agents that each take a role such as novelty checking, some train with reinforcement learning against rewards for criticism, relevance, and actionable suggestions, and some retrieve related literature and refine the draft to ground its comments.
+Most of the effort goes into the first stage, generating the review.
+
+Prompting alone tends to produce generic and overly positive feedback, so researchers have developed four main approaches.
+
+Some fine-tune models on expert reviews, some use multiple agents that each take a role such as novelty checking, some train with reinforcement learning against rewards for criticism, relevance, and actionable suggestions, and some retrieve related literature and refine the draft to ground its comments.
 
 The later stages involve dialogue between authors and reviewers, and they have received far less attention than review generation.
 :::
@@ -412,13 +414,20 @@ Rebuttal, meta-review, and revision are underexplored
 ::: {.notes}
 Even as these systems improve, Wu et al. identify four problems that remain open.
 
-One problem is novelty. LLMs can imitate a reviewer's tone but remain weak at judging whether work is genuinely new. Early systems write coherent critiques yet cannot distinguish incremental work from a breakthrough without broader scientific context, and benchmarks built to test novelty assessment show how difficult this remains.
+- One problem is novelty.
+  - LLMs can imitate a reviewer's tone but remain weak at judging whether work is genuinely new.
+  - Early systems write coherent critiques yet cannot distinguish incremental work from a breakthrough without broader scientific context, and benchmarks built to test novelty assessment show how difficult this remains.
 
-Another is measuring review quality, which matters because any claim that AI review is good enough depends on how quality is measured. The common approach scores a generated review by its overlap with human-written reviews. That rewards surface similarity and says little about correctness or constructiveness. Some datasets are starting to be developed to reach beyond this limitation.
+- Another is measuring review quality, which matters because any claim that AI review is good enough depends on how quality is measured.
+  - The common approach scores a generated review by its overlap with human-written reviews.
+  - That rewards surface similarity and says little about correctness or constructiveness. Some datasets are starting to be developed to reach beyond this limitation.
 
-A third is the evidence base. Most peer review datasets come from NLP and ML conferences, which limits how far the findings generalize. Wu et al. note that broader coverage is needed to test whether current models overfit to domain-specific language.
+- A third is the evidence base.
+  - Most peer review datasets come from NLP and ML conferences, which limits how far the findings generalize.
+  - Wu et al. note that broader coverage is needed to test whether current models overfit to domain-specific language.
 
-The last concerns the steps after the review. Rebuttal, meta-review, and revision involve richer argument and collaboration between authors and reviewers, yet benchmarks for them are sparse.
+- The last concerns the steps after the review.
+  - Rebuttal, meta-review, and revision involve richer argument and collaboration between authors and reviewers, yet benchmarks for them are sparse.
 :::
 
 ## AI-assisted review is a governance problem
@@ -444,7 +453,12 @@ Wu et al. survey AI systems built to generate the review, and Pilatti et al. ask
 
 Pilatti's scoping review treats AI-assisted review as a problem of institutional governance that goes beyond individual conduct. Prohibition and detection cannot stop reviewers from using AI, because that use is hard to see, so they argue that governance has to make judgement verifiable.
 
-The authors identify three risks. Reviewers may outsource the central steps of a review to AI, which leads to accountability laundering, in which a report still carries a named reviewer's endorsement although no one checked the work behind it. AI-generated reports are also hard to detect, so rules against AI use are hard to enforce. Furthermore, reviewers who use AI out of sight tend to rely on external tools, which breaches confidentiality. Finally, authors have injected prompts in manuscripts to manipulate the AI tools that reviewers use.
+The authors identify a few significant risks:
+
+- Reviewers may outsource the central steps of a review to AI, which leads to accountability laundering, in which a report still carries a named reviewer's endorsement although no one checked the work behind it.
+- AI-generated reports are also hard to detect, so rules against AI use are hard to enforce.
+- Furthermore, reviewers who use AI out of sight tend to rely on external tools, which breaches confidentiality.
+- Finally, authors have injected prompts in manuscripts to manipulate the AI tools that reviewers use.
 :::
 
 ## Making judgement verifiable
@@ -462,13 +476,21 @@ Pilatti et al. 2026.
 ::: {.notes}
 Pilatti et al. conclude that peer review stays a practice of responsible judgement only if AI-assisted work becomes more verifiable. For each of the three risks, they propose responses that reviewers and institutions can carry out and check.
 
-To counter accountability laundering, Pilatti et al. suggest treating AI output as a suggestion only. The reviewer checks each suggestion against the manuscript and answers for every claim in the report, including claims the tool raised first. The journal then audits a sample of reports, asking whether the comments point to specific sections, figures, or tables, whether strong recommendations are justified, and whether any claims cannot be verified.
+- To counter accountability laundering, Pilatti et al. suggest treating AI output as a suggestion only.
+  - The reviewer checks each suggestion against the manuscript and answers for every claim in the report, including claims the tool raised first.
+  - The journal then audits a sample of reports, asking whether the comments point to specific sections, figures, or tables, whether strong recommendations are justified, and whether any claims cannot be verified.
 
-For reports that evade detection, Pilatti et al. propose requiring specific disclosure of the task AI performed, whether manuscript content was processed and under what conditions, and whether the tool transformed the report beyond language polishing. They argue that this gives reviewers a regulated path for uses that are likely to happen anyway, which reduces the incentive to conceal them, but they list whether it works as a hypothesis to test. AI used on a manuscript should preferably run in an environment controlled by the journal or another institution, with guarantees that the manuscript is not retained or used for training. More robust regimes have journals offer internal tools, with access logs for later investigation.
+- For reports that evade detection, Pilatti et al. propose requiring specific disclosure of the task AI performed, whether manuscript content was processed and under what conditions, and whether the tool transformed the report beyond language polishing.
+  - They argue that this gives reviewers a regulated path for uses that are likely to happen anyway, which reduces the incentive to conceal them, but they list whether it works as a hypothesis to test.
+  - AI used on a manuscript should preferably run in an environment controlled by the journal or another institution, with guarantees that the manuscript is not retained or used for training.
+  - More robust regimes have journals offer internal tools, with access logs for later investigation.
 
-For prompt injection, manuscripts are sanitized before any AI processing. That means removing invisible text, normalizing formatting, and flagging suspicious elements, which reduces the attack surface.
+- For prompt injection, manuscripts are sanitized before any AI processing.
+  - That means removing invisible text, normalizing formatting, and flagging suspicious elements, which reduces the attack surface.
 
-Effort shifts from writing reviews to checking them. The reviewer checks the tool, and the journal checks the reviews. Pilatti et al. add that reducing workload cannot mean reducing responsibility.
+- Effort shifts from writing reviews to checking them.
+  - The reviewer checks the tool, and the journal checks the reviews.
+  - Pilatti et al. add that reducing workload cannot mean reducing responsibility.
 :::
 
 ## Discussion
